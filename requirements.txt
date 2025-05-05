@@ -2,3 +2,5 @@ python-dotenv
 langchain-core
 langchain-community
 faiss
+langchain-text-splitter
+duckduckgo-search
