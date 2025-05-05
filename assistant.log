@@ -1,0 +1,236 @@
+2025-05-04 23:17:54,437 [INFO] Loading faiss.
+2025-05-04 23:17:54,461 [INFO] Successfully loaded faiss.
+2025-05-04 23:17:54,466 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-04 23:17:54,726 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-04 23:17:54,747 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-04 23:17:54,893 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-04 23:17:55,058 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-04 23:18:03,030 [INFO] New Question: who does a pen work
+2025-05-04 23:18:03,812 [INFO] HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-04 23:18:24,777 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-04 23:18:24,791 [INFO] Answered using memory.
+2025-05-04 23:20:32,691 [INFO] New Question: Who is Prashanth Reddy Varanganti
+2025-05-04 23:20:34,828 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-04 23:20:35,852 [INFO] response: https://html.duckduckgo.com/html 200
+2025-05-04 23:20:43,926 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-04 23:20:44,863 [INFO] HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-04 23:20:44,867 [INFO] Adding new content to vector store.
+2025-05-04 23:20:45,271 [INFO] HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-04 23:20:58,838 [INFO] New Question: Who is Prashanth Reddy Varanganti
+2025-05-04 23:21:01,146 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-04 23:21:02,168 [INFO] response: https://lite.duckduckgo.com/lite/ 200
+2025-05-04 23:21:13,843 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-04 23:21:14,153 [INFO] HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-04 23:21:14,157 [INFO] Adding new content to vector store.
+2025-05-04 23:21:14,766 [INFO] HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-04 23:23:04,507 [INFO] Loading faiss.
+2025-05-04 23:23:04,529 [INFO] Successfully loaded faiss.
+2025-05-04 23:23:04,533 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-04 23:23:04,810 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-04 23:23:04,832 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-04 23:23:04,996 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-04 23:23:05,134 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-04 23:23:14,324 [INFO] New Question: Who is prashanth reddy varanganti
+2025-05-04 23:23:15,089 [INFO] HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-04 23:23:19,977 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-04 23:23:19,992 [INFO] Answered using memory.
+2025-05-04 23:24:25,078 [INFO] Loading faiss.
+2025-05-04 23:24:25,097 [INFO] Successfully loaded faiss.
+2025-05-04 23:24:25,101 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-04 23:24:25,362 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-04 23:24:25,375 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-04 23:24:25,604 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-04 23:24:25,681 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-04 23:24:30,150 [INFO] New message: HI 
+2025-05-04 23:24:30,151 [INFO] New Question: HI 
+2025-05-04 23:24:30,998 [INFO] HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-04 23:24:32,099 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-04 23:24:32,110 [INFO] Answered using memory.
+2025-05-04 23:24:39,429 [INFO] New message: What is todays date
+2025-05-04 23:24:39,430 [INFO] New Question: What is todays date
+2025-05-04 23:24:40,901 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-04 23:25:04,899 [INFO] New message: what is today..?
+2025-05-04 23:25:04,900 [INFO] New Question: what is today..?
+2025-05-04 23:25:08,551 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-04 23:25:31,300 [INFO] New message: what is todya
+2025-05-04 23:25:31,300 [INFO] New Question: what is todya
+2025-05-04 23:25:31,562 [INFO] HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-04 23:25:34,050 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-04 23:25:34,053 [INFO] Answered using memory.
+2025-05-04 23:25:39,609 [INFO] New message: stoday 
+2025-05-04 23:25:39,610 [INFO] New Question: stoday 
+2025-05-04 23:25:41,626 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-04 23:25:49,224 [INFO] New message: what is today
+2025-05-04 23:25:49,224 [INFO] New Question: what is today
+2025-05-04 23:25:51,902 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-04 23:26:13,965 [INFO] New message: ok ,what do you mean by ai engineering..?
+2025-05-04 23:26:13,965 [INFO] New Question: ok ,what do you mean by ai engineering..?
+2025-05-04 23:26:14,805 [INFO] HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-04 23:26:29,245 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-04 23:26:29,250 [INFO] Answered using memory.
+2025-05-04 23:27:17,887 [INFO] New message: Long note book
+2025-05-04 23:27:17,887 [INFO] New Question: Long note book
+2025-05-04 23:27:18,398 [INFO] HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-04 23:27:41,336 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-04 23:27:41,341 [INFO] Answered using memory.
+2025-05-04 23:28:53,480 [INFO] Loading faiss.
+2025-05-04 23:28:53,499 [INFO] Successfully loaded faiss.
+2025-05-04 23:28:53,503 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-04 23:28:53,707 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-04 23:28:53,720 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-04 23:28:53,833 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-04 23:28:54,010 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-04 23:28:58,676 [INFO] New message: HI
+2025-05-04 23:28:58,677 [INFO] New Question: HI
+2025-05-04 23:28:59,676 [INFO] HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-05-04 23:28:59,677 [INFO] Retrying request to /embeddings in 0.423430 seconds
+2025-05-04 23:29:00,509 [INFO] HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-05-04 23:29:00,510 [INFO] Retrying request to /embeddings in 0.900636 seconds
+2025-05-04 23:29:01,926 [INFO] HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-05-04 23:36:05,589 [INFO] Use pytorch device_name: mps
+2025-05-04 23:36:05,590 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-04 23:36:07,140 [WARNING] Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-04 23:36:12,372 [INFO] 📂 Loading existing vector store...
+2025-05-04 23:36:12,374 [INFO] Loading faiss.
+2025-05-04 23:36:12,556 [INFO] Successfully loaded faiss.
+2025-05-04 23:36:12,561 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-04 23:36:12,891 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-04 23:36:12,906 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-04 23:36:13,154 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-04 23:36:13,189 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-04 23:36:23,475 [INFO] User: Hey
+2025-05-04 23:36:23,475 [INFO] New Question: Hey
+2025-05-04 23:36:49,116 [INFO] Use pytorch device_name: mps
+2025-05-04 23:36:49,117 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-04 23:36:50,429 [INFO] 📂 Loading existing vector store...
+2025-05-04 23:36:50,437 [INFO] Loading faiss.
+2025-05-04 23:36:50,771 [INFO] Successfully loaded faiss.
+2025-05-04 23:36:50,776 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-04 23:36:51,009 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-04 23:36:51,024 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-04 23:36:51,121 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-04 23:36:51,336 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-04 23:36:55,939 [INFO] User: Hey
+2025-05-04 23:36:55,940 [INFO] New Question: Hey
+2025-05-04 23:37:44,053 [INFO] Use pytorch device_name: mps
+2025-05-04 23:37:44,054 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-04 23:37:45,359 [INFO] 📦 Initializing new vector store...
+2025-05-04 23:37:46,731 [INFO] Loading faiss.
+2025-05-04 23:37:46,997 [INFO] Successfully loaded faiss.
+2025-05-04 23:37:47,003 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-04 23:37:47,293 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-04 23:37:47,310 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-04 23:37:47,461 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-04 23:37:47,614 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-04 23:37:51,102 [INFO] User: HEy
+2025-05-04 23:37:51,103 [INFO] New Question: HEy
+2025-05-04 23:37:51,869 [INFO] Answered using memory.
+2025-05-04 23:38:10,664 [INFO] User: What US did to India..?
+2025-05-04 23:38:10,664 [INFO] New Question: What US did to India..?
+2025-05-04 23:38:12,346 [INFO] Memory insufficient. Falling back to real-time web search.
+2025-05-04 23:38:12,347 [INFO] Real-time query detected: 'What US did to India..?'
+2025-05-04 23:38:13,584 [INFO] response: https://html.duckduckgo.com/html 200
+2025-05-04 23:38:14,931 [INFO] Adding new content to vector store.
+2025-05-04 23:38:37,643 [INFO] User: What US did to india..?
+2025-05-04 23:38:37,644 [INFO] New Question: What US did to india..?
+2025-05-04 23:38:38,397 [INFO] Answered using memory.
+2025-05-04 23:47:16,450 [INFO] Use pytorch device_name: mps
+2025-05-04 23:47:16,451 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-04 23:47:17,944 [INFO] 📂 Loading existing vector store...
+2025-05-04 23:47:17,955 [INFO] Loading faiss.
+2025-05-04 23:47:18,165 [INFO] Successfully loaded faiss.
+2025-05-04 23:47:18,172 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-04 23:47:18,692 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-04 23:48:14,916 [INFO] Use pytorch device_name: mps
+2025-05-04 23:48:14,917 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-04 23:48:16,180 [INFO] 📂 Loading existing vector store...
+2025-05-04 23:48:16,186 [INFO] Loading faiss.
+2025-05-04 23:48:16,358 [INFO] Successfully loaded faiss.
+2025-05-04 23:48:16,362 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-04 23:48:16,629 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-04 23:48:16,649 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-04 23:48:16,708 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-04 23:48:16,947 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-04 23:49:06,536 [INFO] Use pytorch device_name: mps
+2025-05-04 23:49:06,536 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-04 23:49:08,344 [INFO] 📂 Loading existing vector store...
+2025-05-04 23:49:08,347 [INFO] Loading faiss.
+2025-05-04 23:49:08,532 [INFO] Successfully loaded faiss.
+2025-05-04 23:49:08,536 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-04 23:49:08,755 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-04 23:49:08,770 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-04 23:49:08,960 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-04 23:49:09,077 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-05 00:50:13,159 [INFO] Use pytorch device_name: mps
+2025-05-05 00:50:13,159 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-05 00:50:14,497 [INFO] 📂 Loading existing vector store...
+2025-05-05 00:50:14,503 [INFO] Loading faiss.
+2025-05-05 00:50:14,738 [INFO] Successfully loaded faiss.
+2025-05-05 00:50:14,744 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-05 00:50:15,026 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-05 00:50:15,044 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-05 00:50:15,174 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-05 00:50:15,343 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-05 00:50:39,936 [INFO] User: Hey , HI
+2025-05-05 00:50:39,936 [INFO] New Question: Hey , HI
+2025-05-05 00:50:41,481 [INFO] Answered using memory.
+2025-05-05 00:51:02,253 [INFO] User: WHt is th current staus of the indian army..?
+2025-05-05 00:51:02,254 [INFO] New Question: WHt is th current staus of the indian army..?
+2025-05-05 00:51:03,216 [INFO] Answered using memory.
+2025-05-05 00:51:43,085 [INFO] User: I cant understand why we use RAG
+2025-05-05 00:51:43,086 [INFO] New Question: I cant understand why we use RAG
+2025-05-05 00:51:44,973 [INFO] Answered using memory.
+2025-05-05 00:52:23,974 [INFO] Use pytorch device_name: mps
+2025-05-05 00:52:23,974 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-05 00:52:25,419 [INFO] 📂 Loading existing vector store...
+2025-05-05 00:52:25,423 [INFO] Loading faiss.
+2025-05-05 00:52:25,657 [INFO] Successfully loaded faiss.
+2025-05-05 00:52:25,661 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-05 00:52:25,898 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-05 00:52:25,911 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-05 00:52:26,117 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-05 00:52:26,189 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-05 00:52:30,627 [INFO] User: HEY
+2025-05-05 00:52:30,627 [INFO] New Question: HEY
+2025-05-05 00:52:31,308 [INFO] Answered using memory.
+2025-05-05 00:52:43,194 [INFO] User: I DONT WNAT THAT
+2025-05-05 00:52:43,195 [INFO] New Question: I DONT WNAT THAT
+2025-05-05 00:52:44,776 [INFO] Answered using memory.
+2025-05-05 00:56:20,576 [INFO] Use pytorch device_name: mps
+2025-05-05 00:56:20,576 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-05 00:56:21,926 [INFO] 📂 Loading existing vector store...
+2025-05-05 00:56:21,932 [INFO] Loading faiss.
+2025-05-05 00:56:22,197 [INFO] Successfully loaded faiss.
+2025-05-05 00:56:22,202 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-05 00:56:22,435 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-05 00:56:22,449 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-05 00:56:22,768 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-05 00:56:22,768 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-05 00:56:30,876 [INFO] User: Hey
+2025-05-05 00:56:30,877 [INFO] New Question: Hey
+2025-05-05 00:56:31,308 [INFO] No relevant memory found. Using web search.
+2025-05-05 00:56:31,309 [INFO] Real-time query detected: 'Hey'
+2025-05-05 00:56:32,679 [INFO] response: https://lite.duckduckgo.com/lite/ 200
+2025-05-05 00:56:33,208 [INFO] Adding new content to vector store.
+2025-05-05 00:56:54,640 [INFO] User: Hey, hi
+2025-05-05 00:56:54,641 [INFO] New Question: Hey, hi
+2025-05-05 00:56:54,796 [INFO] No relevant memory found. Using web search.
+2025-05-05 00:56:54,796 [INFO] Real-time query detected: 'Hey, hi'
+2025-05-05 00:56:55,660 [INFO] response: https://html.duckduckgo.com/html 200
+2025-05-05 00:56:56,238 [INFO] Adding new content to vector store.
+2025-05-05 01:02:28,907 [INFO] User: HEY , HI ASSISTANT
+2025-05-05 01:02:28,908 [INFO] New Question: HEY , HI ASSISTANT
+2025-05-05 01:02:30,049 [INFO] No relevant memory found. Using web search.
+2025-05-05 01:02:30,050 [INFO] Real-time query detected: 'HEY , HI ASSISTANT'
+2025-05-05 01:02:31,033 [INFO] response: https://html.duckduckgo.com/html 200
+2025-05-05 01:02:31,521 [INFO] Adding new content to vector store.
+2025-05-05 01:10:07,943 [INFO] Use pytorch device_name: mps
+2025-05-05 01:10:07,944 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-05 01:10:09,436 [INFO] 📂 Loading existing vector store...
+2025-05-05 01:10:09,439 [INFO] Loading faiss.
+2025-05-05 01:10:09,622 [INFO] Successfully loaded faiss.
+2025-05-05 01:10:09,627 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-05 01:10:09,889 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-05 01:10:09,904 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-05 01:10:10,025 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-05 01:10:10,190 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
