@@ -1,6 +1,6 @@
 python-dotenv
 langchain-core
 langchain-community
-faiss
-langchain-text-splitter
+faiss-cpu
+langchain-text-splitters
 duckduckgo-search

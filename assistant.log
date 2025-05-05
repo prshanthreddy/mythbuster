@@ -234,3 +234,178 @@
 2025-05-05 01:10:09,904 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
 2025-05-05 01:10:10,025 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
 2025-05-05 01:10:10,190 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-05 01:39:48,168 [INFO] Use pytorch device_name: mps
+2025-05-05 01:39:48,168 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-05 01:39:49,480 [INFO] 📂 Loading existing vector store...
+2025-05-05 01:39:49,482 [INFO] Loading faiss.
+2025-05-05 01:39:49,668 [INFO] Successfully loaded faiss.
+2025-05-05 01:39:49,672 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-05 01:39:50,130 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-05 01:41:14,393 [INFO] Use pytorch device_name: mps
+2025-05-05 01:41:14,393 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-05 01:41:16,035 [INFO] 📂 Loading existing vector store...
+2025-05-05 01:41:16,039 [INFO] Loading faiss.
+2025-05-05 01:41:16,118 [INFO] Successfully loaded faiss.
+2025-05-05 01:41:16,123 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-05 01:41:16,635 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-05 01:42:46,581 [INFO] Use pytorch device_name: mps
+2025-05-05 01:42:46,582 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-05 01:42:48,533 [INFO] 📦 Initializing new vector store...
+2025-05-05 01:42:48,869 [INFO] Loading faiss.
+2025-05-05 01:42:48,907 [INFO] Successfully loaded faiss.
+2025-05-05 01:42:48,911 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-05 01:42:49,295 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-05 01:43:28,059 [INFO] Use pytorch device_name: mps
+2025-05-05 01:43:28,059 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-05 01:43:29,355 [INFO] 📦 Initializing new vector store...
+2025-05-05 01:43:29,590 [INFO] Loading faiss.
+2025-05-05 01:43:29,640 [INFO] Successfully loaded faiss.
+2025-05-05 01:43:29,645 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-05 01:43:29,973 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-05 01:44:20,491 [INFO] Use pytorch device_name: mps
+2025-05-05 01:44:20,492 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-05 01:44:22,302 [INFO] 📦 Initializing new vector store...
+2025-05-05 01:44:22,541 [INFO] Loading faiss.
+2025-05-05 01:44:22,586 [INFO] Successfully loaded faiss.
+2025-05-05 01:44:22,591 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-05 01:44:22,844 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-05 01:44:22,864 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-05 01:44:23,027 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-05 01:44:23,152 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-05 01:44:50,301 [INFO] User claim: • "Humans only use 10% of their brain"
+
+2025-05-05 01:44:50,301 [INFO] New Claim: • "Humans only use 10% of their brain"
+
+2025-05-05 01:44:51,353 [INFO] No relevant memory. Using web search.
+2025-05-05 01:44:51,353 [INFO] Real-time myth query detected: '• "Humans only use 10% of their brain"
+'
+2025-05-05 01:44:52,323 [INFO] response: https://html.duckduckgo.com/html 200
+2025-05-05 01:44:53,508 [INFO] response: https://html.duckduckgo.com/html 200
+2025-05-05 01:44:54,285 [INFO] Adding new content to vector store.
+2025-05-05 01:45:23,699 [INFO] User claim: Goldfish have a 3-second memory
+2025-05-05 01:45:23,699 [INFO] New Claim: Goldfish have a 3-second memory
+2025-05-05 01:45:23,890 [INFO] No relevant memory. Using web search.
+2025-05-05 01:45:23,891 [INFO] Real-time myth query detected: 'Goldfish have a 3-second memory'
+2025-05-05 01:45:24,870 [INFO] response: https://html.duckduckgo.com/html 200
+2025-05-05 01:45:25,480 [INFO] Adding new content to vector store.
+2025-05-05 01:45:29,087 [INFO] User claim: 
+2025-05-05 01:45:29,087 [INFO] New Claim: 
+2025-05-05 01:45:29,924 [INFO] No relevant memory. Using web search.
+2025-05-05 01:45:29,924 [INFO] Real-time myth query detected: ''
+2025-05-05 01:45:29,926 [INFO] Error to search using lite backend: keywords is mandatory
+2025-05-05 01:45:29,926 [INFO] Error to search using html backend: keywords is mandatory
+2025-05-05 01:45:56,308 [INFO] User claim: • "You can see the Great Wall of China from space"
+
+
+2025-05-05 01:45:56,309 [INFO] New Claim: • "You can see the Great Wall of China from space"
+
+
+2025-05-05 01:45:57,113 [INFO] No relevant memory. Using web search.
+2025-05-05 01:45:57,114 [INFO] Real-time myth query detected: '• "You can see the Great Wall of China from space"
+
+'
+2025-05-05 01:45:58,116 [INFO] response: https://lite.duckduckgo.com/lite/ 200
+2025-05-05 01:45:58,596 [INFO] Adding new content to vector store.
+2025-05-05 01:48:21,054 [INFO] Use pytorch device_name: mps
+2025-05-05 01:48:21,054 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-05 01:48:22,928 [INFO] 📂 Loading existing vector store...
+2025-05-05 01:48:22,938 [INFO] Loading faiss.
+2025-05-05 01:48:23,005 [INFO] Successfully loaded faiss.
+2025-05-05 01:48:23,010 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-05 01:48:23,534 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-05 01:50:04,188 [INFO] Use pytorch device_name: mps
+2025-05-05 01:50:04,188 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-05 01:50:05,865 [INFO] 📂 Loading existing vector store...
+2025-05-05 01:50:05,867 [INFO] Loading faiss.
+2025-05-05 01:50:05,939 [INFO] Successfully loaded faiss.
+2025-05-05 01:50:05,944 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-05 01:50:06,212 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-05 01:50:06,227 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-05 01:50:06,421 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-05 01:50:06,518 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-05 01:50:30,374 [INFO] User claim: Humans only use 10% of their brain
+2025-05-05 01:50:30,375 [INFO] New Claim: Humans only use 10% of their brain
+2025-05-05 01:50:30,859 [INFO] No relevant memory. Using web search.
+2025-05-05 01:50:30,859 [INFO] Real-time myth query detected: 'Humans only use 10% of their brain'
+2025-05-05 01:50:31,975 [INFO] response: https://html.duckduckgo.com/html 200
+2025-05-05 01:50:32,477 [INFO] Adding new content to vector store.
+2025-05-05 01:50:43,062 [INFO] User claim: Humans only use 10% of their brain
+2025-05-05 01:50:43,062 [INFO] New Claim: Humans only use 10% of their brain
+2025-05-05 01:50:43,125 [INFO] No relevant memory. Using web search.
+2025-05-05 01:50:43,125 [INFO] Real-time myth query detected: 'Humans only use 10% of their brain'
+2025-05-05 01:50:44,127 [INFO] response: https://lite.duckduckgo.com/lite/ 200
+2025-05-05 01:50:44,766 [INFO] Adding new content to vector store.
+2025-05-05 01:50:55,973 [INFO] User claim: Goldfish have a 3-second memory
+2025-05-05 01:50:55,973 [INFO] New Claim: Goldfish have a 3-second memory
+2025-05-05 01:50:56,018 [INFO] No relevant memory. Using web search.
+2025-05-05 01:50:56,018 [INFO] Real-time myth query detected: 'Goldfish have a 3-second memory'
+2025-05-05 01:50:56,933 [INFO] response: https://html.duckduckgo.com/html 200
+2025-05-05 01:50:57,388 [INFO] Adding new content to vector store.
+2025-05-05 01:51:05,833 [INFO] User claim: Goldfish have a 3-second memory
+2025-05-05 01:51:05,834 [INFO] New Claim: Goldfish have a 3-second memory
+2025-05-05 01:51:05,965 [INFO] No relevant memory. Using web search.
+2025-05-05 01:51:05,966 [INFO] Real-time myth query detected: 'Goldfish have a 3-second memory'
+2025-05-05 01:51:06,861 [INFO] response: https://lite.duckduckgo.com/lite/ 200
+2025-05-05 01:51:07,337 [INFO] Adding new content to vector store.
+2025-05-05 01:51:14,427 [INFO] User claim: You can see the Great Wall of China from space
+2025-05-05 01:51:14,427 [INFO] New Claim: You can see the Great Wall of China from space
+2025-05-05 01:51:15,434 [INFO] No relevant memory. Using web search.
+2025-05-05 01:51:15,434 [INFO] Real-time myth query detected: 'You can see the Great Wall of China from space'
+2025-05-05 01:51:16,487 [INFO] response: https://html.duckduckgo.com/html 200
+2025-05-05 01:51:16,958 [INFO] Adding new content to vector store.
+2025-05-05 01:51:26,756 [INFO] User claim: You can see the Great Wall of China from space
+2025-05-05 01:51:26,757 [INFO] New Claim: You can see the Great Wall of China from space
+2025-05-05 01:51:26,919 [INFO] No relevant memory. Using web search.
+2025-05-05 01:51:26,919 [INFO] Real-time myth query detected: 'You can see the Great Wall of China from space'
+2025-05-05 01:51:28,058 [INFO] response: https://lite.duckduckgo.com/lite/ 200
+2025-05-05 01:51:28,737 [INFO] Adding new content to vector store.
+2025-05-05 01:53:11,352 [INFO] User claim: Goldfish have a 3-second memory
+2025-05-05 01:53:11,352 [INFO] New Claim: Goldfish have a 3-second memory
+2025-05-05 01:53:11,658 [INFO] No relevant memory. Using web search.
+2025-05-05 01:53:11,659 [INFO] Real-time myth query detected: 'Goldfish have a 3-second memory'
+2025-05-05 01:53:12,584 [INFO] response: https://lite.duckduckgo.com/lite/ 200
+2025-05-05 01:53:13,018 [INFO] Adding new content to vector store.
+2025-05-05 01:53:22,009 [INFO] User claim: Humans only use 10% of their brain
+2025-05-05 01:53:22,009 [INFO] New Claim: Humans only use 10% of their brain
+2025-05-05 01:53:22,064 [INFO] No relevant memory. Using web search.
+2025-05-05 01:53:22,065 [INFO] Real-time myth query detected: 'Humans only use 10% of their brain'
+2025-05-05 01:53:22,966 [INFO] response: https://html.duckduckgo.com/html 200
+2025-05-05 01:53:23,430 [INFO] Adding new content to vector store.
+2025-05-05 01:54:12,440 [INFO] Use pytorch device_name: mps
+2025-05-05 01:54:12,440 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-05 01:54:14,133 [INFO] 📂 Loading existing vector store...
+2025-05-05 01:54:14,141 [INFO] Loading faiss.
+2025-05-05 01:54:14,209 [INFO] Successfully loaded faiss.
+2025-05-05 01:54:14,216 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-05 01:54:14,563 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-05 01:54:14,588 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-05 01:54:14,702 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-05 01:54:14,901 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-05 01:54:20,699 [INFO] User claim: Humans only use 10% of their brain
+2025-05-05 01:54:20,700 [INFO] New Claim: Humans only use 10% of their brain
+2025-05-05 01:54:21,160 [INFO] No relevant memory. Using web search.
+2025-05-05 01:54:21,161 [INFO] Real-time myth query detected: 'Humans only use 10% of their brain'
+2025-05-05 01:54:22,193 [INFO] response: https://lite.duckduckgo.com/lite/ 200
+2025-05-05 01:54:22,667 [INFO] Adding new content to vector store.
+2025-05-05 01:54:30,821 [INFO] User claim: Humans only use 10% of their brain
+2025-05-05 01:54:30,822 [INFO] New Claim: Humans only use 10% of their brain
+2025-05-05 01:54:30,886 [INFO] No relevant memory. Using web search.
+2025-05-05 01:54:30,886 [INFO] Real-time myth query detected: 'Humans only use 10% of their brain'
+2025-05-05 01:54:31,860 [INFO] response: https://html.duckduckgo.com/html 200
+2025-05-05 01:54:32,510 [INFO] Adding new content to vector store.
+2025-05-05 01:56:15,861 [INFO] Use pytorch device_name: mps
+2025-05-05 01:56:15,862 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-05 01:56:17,264 [INFO] 📂 Loading existing vector store...
+2025-05-05 01:56:17,271 [INFO] Loading faiss.
+2025-05-05 01:56:17,331 [INFO] Successfully loaded faiss.
+2025-05-05 01:56:17,336 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-05 01:56:17,612 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-05 01:56:17,627 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-05 01:56:17,732 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-05 01:56:17,927 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-05 01:56:25,086 [INFO] User claim: Humans only use 10% of their brain
+2025-05-05 01:56:25,087 [INFO] New Claim: Humans only use 10% of their brain
+2025-05-05 01:56:26,157 [INFO] Myth verdict given from memory.
+2025-05-05 01:56:31,149 [INFO] User claim: Humans only use 10% of their brain
+2025-05-05 01:56:31,151 [INFO] New Claim: Humans only use 10% of their brain
+2025-05-05 01:56:31,674 [INFO] Myth verdict given from memory.
