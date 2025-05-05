@@ -409,3 +409,86 @@
 2025-05-05 01:56:31,149 [INFO] User claim: Humans only use 10% of their brain
 2025-05-05 01:56:31,151 [INFO] New Claim: Humans only use 10% of their brain
 2025-05-05 01:56:31,674 [INFO] Myth verdict given from memory.
+2025-05-05 09:01:07,326 [INFO] Use pytorch device_name: cuda:0
+2025-05-05 09:01:07,326 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-05 09:01:08,632 [INFO] 📂 Loading existing vector store...
+2025-05-05 09:01:08,634 [INFO] Loading faiss with AVX2 support.
+2025-05-05 09:01:08,664 [INFO] Successfully loaded faiss with AVX2 support.
+2025-05-05 09:01:08,667 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-05 09:01:08,937 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-05 09:01:08,958 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-05 09:01:09,277 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-05 09:01:09,419 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-05 09:01:10,124 [INFO] HTTP Request: GET https://cdn-media.huggingface.co/frpc-gradio-0.3/frpc_linux_amd64 "HTTP/1.1 200 OK"
+2025-05-05 09:01:24,022 [INFO] User claim: Goldfish have a 3-second memory
+2025-05-05 09:01:24,023 [INFO] New Claim: Goldfish have a 3-second memory
+2025-05-05 09:03:01,673 [INFO] Use pytorch device_name: cuda:0
+2025-05-05 09:03:01,673 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-05 09:03:02,727 [INFO] 📂 Loading existing vector store...
+2025-05-05 09:03:02,728 [INFO] Loading faiss with AVX2 support.
+2025-05-05 09:03:02,740 [INFO] Successfully loaded faiss with AVX2 support.
+2025-05-05 09:03:02,743 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-05 09:03:02,996 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-05 09:03:03,010 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-05 09:03:03,187 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-05 09:03:03,278 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-05 09:03:12,972 [INFO] User claim: You can see the Great Wall of China from space
+2025-05-05 09:03:12,973 [INFO] New Claim: You can see the Great Wall of China from space
+2025-05-05 09:03:13,681 [INFO] Myth verdict given from memory.
+2025-05-05 09:03:28,897 [INFO] User claim: Eating carrots improves your eyesight
+2025-05-05 09:03:28,898 [INFO] New Claim: Eating carrots improves your eyesight
+2025-05-05 09:03:28,910 [INFO] No relevant memory. Using web search.
+2025-05-05 09:03:28,910 [INFO] Real-time myth query detected: 'Eating carrots improves your eyesight'
+2025-05-05 09:03:29,994 [INFO] response: https://html.duckduckgo.com/html 200
+2025-05-05 09:03:30,720 [INFO] Adding new content to vector store.
+2025-05-05 09:04:55,428 [INFO] Use pytorch device_name: cuda:0
+2025-05-05 09:04:55,428 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-05 09:04:56,481 [INFO] 📂 Loading existing vector store...
+2025-05-05 09:04:56,482 [INFO] Loading faiss with AVX2 support.
+2025-05-05 09:04:56,492 [INFO] Successfully loaded faiss with AVX2 support.
+2025-05-05 09:04:56,495 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-05 09:04:56,777 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-05 09:04:56,789 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-05 09:04:56,917 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-05 09:04:57,063 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-05 09:05:56,716 [INFO] Use pytorch device_name: cuda:0
+2025-05-05 09:05:56,716 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-05 09:05:58,401 [INFO] 📂 Loading existing vector store...
+2025-05-05 09:05:58,402 [INFO] Loading faiss with AVX2 support.
+2025-05-05 09:05:58,412 [INFO] Successfully loaded faiss with AVX2 support.
+2025-05-05 09:05:58,416 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-05 09:05:58,673 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-05 09:05:58,687 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-05 09:05:58,822 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-05 09:05:58,972 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-05 09:06:06,879 [INFO] User claim: Goldfish have a 3-second memory
+2025-05-05 09:06:06,880 [INFO] New Claim: Goldfish have a 3-second memory
+2025-05-05 09:06:08,717 [INFO] Myth verdict given from memory.
+2025-05-05 09:06:13,867 [INFO] User claim: Goldfish have a 3-second memory
+2025-05-05 09:06:13,867 [INFO] New Claim: Goldfish have a 3-second memory
+2025-05-05 09:06:14,657 [INFO] Myth verdict given from memory.
+2025-05-05 09:06:19,393 [INFO] User claim: Drinking cold water causes a sore throat
+2025-05-05 09:06:19,393 [INFO] New Claim: Drinking cold water causes a sore throat
+2025-05-05 09:06:19,406 [INFO] No relevant memory. Using web search.
+2025-05-05 09:06:19,406 [INFO] Real-time myth query detected: 'Drinking cold water causes a sore throat'
+2025-05-05 09:06:20,797 [INFO] response: https://lite.duckduckgo.com/lite/ 200
+2025-05-05 09:06:21,630 [INFO] Adding new content to vector store.
+2025-05-05 09:10:01,193 [INFO] Use pytorch device_name: cuda:0
+2025-05-05 09:10:01,193 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-05 09:10:02,373 [INFO] 📂 Loading existing vector store...
+2025-05-05 09:10:02,375 [INFO] Loading faiss with AVX2 support.
+2025-05-05 09:10:02,387 [INFO] Successfully loaded faiss with AVX2 support.
+2025-05-05 09:10:02,389 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-05 09:10:02,678 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-05 09:10:02,704 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-05 09:10:02,807 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-05 09:10:02,967 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-05 09:10:07,289 [INFO] User claim: Drinking cold water causes a sore throat
+2025-05-05 09:10:07,289 [INFO] New Claim: Drinking cold water causes a sore throat
+2025-05-05 09:10:08,200 [INFO] Myth verdict given from memory.
+2025-05-05 09:10:22,143 [INFO] User claim: Cracking your knuckles causes arthritis
+2025-05-05 09:10:22,144 [INFO] New Claim: Cracking your knuckles causes arthritis
+2025-05-05 09:10:22,159 [INFO] No relevant memory. Using web search.
+2025-05-05 09:10:22,160 [INFO] Real-time myth query detected: 'Cracking your knuckles causes arthritis'
+2025-05-05 09:10:23,144 [INFO] response: https://html.duckduckgo.com/html 200
+2025-05-05 09:10:26,129 [INFO] Adding new content to vector store.

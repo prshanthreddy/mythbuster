@@ -56,7 +56,7 @@ def query_groq_llm(prompt: str) -> str:
     system_prompt = (
         "You are MythBuster AI. A user will state a myth or claim. "
         "Your task is to analyze the claim using the provided context or search result. "
-        "Decide if the claim is BUSTED, PLAUSIBLE, or CONFIRMED. Justify your verdict briefly and factually."
+        "Decide if the claim is BUSTED, PLAUSIBLE, or CONFIRMED. Justify your verdict briefly and factually.Provide Source if possible "
     )
 
     url = "https://api.groq.com/openai/v1/chat/completions"
@@ -181,7 +181,7 @@ with gr.Blocks(title="MythBuster AI") as iface:
 
     with gr.Row():
         chatbot = gr.Chatbot(label="🧠 Myth Verdicts", height=400, type="messages")
-        logbox = gr.Textbox(label="📜 Logs", lines=12, interactive=False)
+        # logbox = gr.Textbox(label="📜 Logs", lines=12, interactive=False)
 
     with gr.Row():
         msg = gr.Textbox(
@@ -202,8 +202,8 @@ with gr.Blocks(title="MythBuster AI") as iface:
             logs = "".join(f.readlines()[-10:])
         return "", history, logs
 
-    submit_btn.click(user_message_handler, [msg, chatbot], [msg, chatbot, logbox])
-    msg.submit(user_message_handler, [msg, chatbot], [msg, chatbot, logbox])
+    submit_btn.click(user_message_handler, [msg, chatbot], [msg, chatbot])
+    msg.submit(user_message_handler, [msg, chatbot], [msg, chatbot])
     gr.Examples(
         examples=[
             ["Drinking cold water causes a sore throat"],
@@ -218,7 +218,7 @@ with gr.Blocks(title="MythBuster AI") as iface:
             ["The Great Wall of China is visible from space"]
         ],
         inputs=msg,
-        outputs=[msg, chatbot, logbox],
+        outputs=[msg, chatbot],
         label="Examples",
         fn=user_message_handler
     )
