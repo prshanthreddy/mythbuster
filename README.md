@@ -93,11 +93,3 @@ MythBuster AI is an intelligent assistant that investigates myths, rumors, and c
 ## 🔐 Security
 
 Make sure not to share your `.env` file or `GROQ_API_KEY`. Keep your API keys secure.
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests.
-
-## 📜 License
-
-[MIT License](LICENSE)
