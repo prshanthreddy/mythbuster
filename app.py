@@ -19,6 +19,7 @@ from langchain_community.tools import DuckDuckGoSearchResults
 
 load_dotenv()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+HF_API_TOKEN = os.getenv("HF_API_TOKEN")
 os.environ["USER_AGENT"] = "my-custom-agent"
 
 logging.basicConfig(
@@ -50,6 +51,7 @@ else:
 
 splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200, add_start_index=True)
 
+
 # ---------------- GROQ LLM ----------------
 
 def query_groq_llm(prompt: str) -> str:
@@ -76,6 +78,45 @@ def query_groq_llm(prompt: str) -> str:
     response.raise_for_status()
     return response.json()['choices'][0]['message']['content']
 
+
+def generate_funny_image_prompt(myth: str) -> str:
+    system_prompt = (
+        "You are a creative visual humorist. Given a myth or false belief, generate a funny or absurd description of an image "
+        "that visually illustrates or mocks the myth. Be creative, specific, and avoid using text in the image."
+    )
+
+    url = "https://api.groq.com/openai/v1/chat/completions"
+    headers = {
+        "Authorization": f"Bearer {GROQ_API_KEY}",
+        "Content-Type": "application/json"
+    }
+    payload = {
+        "model": "llama3-8b-8192",
+        "messages": [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": myth}
+        ],
+        "temperature": 1.0
+    }
+
+    response = requests.post(url, headers=headers, json=payload)
+    response.raise_for_status()
+    return response.json()["choices"][0]["message"]["content"].strip()
+
+# ------------Hugging face model for image generation -------
+def generate_image_from_prompt(prompt: str, api_token: str, output_path="funny_output.jpg") -> str:
+    url = "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev"
+    headers = {"Authorization": f"Bearer {api_token}"}
+    payload = {"inputs": prompt}
+
+    response = requests.post(url, headers=headers, json=payload)
+    response.raise_for_status()
+
+    # Save image
+    with open(output_path, "wb") as f:
+        f.write(response.content)
+
+    return output_path
 
 # ---------------- DUCKDUCKGO TOOL ----------------
 
@@ -182,6 +223,7 @@ with gr.Blocks(title="MythBuster AI") as iface:
     with gr.Row():
         chatbot = gr.Chatbot(label="🧠 Myth Verdicts", height=400, type="messages")
         # logbox = gr.Textbox(label="📜 Logs", lines=12, interactive=False)
+        funny_output = gr.Image(label="😂 Funny Image")
 
     with gr.Row():
         msg = gr.Textbox(
@@ -200,10 +242,15 @@ with gr.Blocks(title="MythBuster AI") as iface:
         # Tail last 10 lines of the log
         with open("assistant.log", "r") as f:
             logs = "".join(f.readlines()[-10:])
-        return "", history, logs
 
-    submit_btn.click(user_message_handler, [msg, chatbot], [msg, chatbot])
-    msg.submit(user_message_handler, [msg, chatbot], [msg, chatbot])
+        # Funny image generation
+        funny_prompt = generate_funny_image_prompt(message)
+        funny_image_path = generate_image_from_prompt(funny_prompt, HF_API_TOKEN) 
+
+        return "", history, funny_image_path
+
+    submit_btn.click(user_message_handler, [msg, chatbot], [msg, chatbot, funny_output])
+    msg.submit(user_message_handler, [msg, chatbot], [msg, chatbot, funny_output])
     gr.Examples(
         examples=[
             ["Drinking cold water causes a sore throat"],
