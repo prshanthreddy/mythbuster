@@ -233,24 +233,24 @@ with gr.Blocks(title="MythBuster AI") as iface:
         )
         submit_btn = gr.Button("🚀 Bust This Myth")
 
-    def user_message_handler(message, history):
-        logger.info(f"User claim: {message}")
-        response = ask(message)
-        history.append({"role": "user", "content": message})
-        history.append({"role": "assistant", "content": response})
 
-        # Tail last 10 lines of the log
-        with open("assistant.log", "r") as f:
-            logs = "".join(f.readlines()[-10:])
+        def user_message_handler(message, history, generate_img):
+            logger.info(f"User claim: {message}")
+            response = ask(message)
+            history.append({"role": "user", "content": message})
+            history.append({"role": "assistant", "content": response})
 
-        # Funny image generation
-        funny_prompt = generate_funny_image_prompt(message)
-        funny_image_path = generate_image_from_prompt(funny_prompt, HF_API_TOKEN) 
+            image_path = None
+            if generate_img:
+                funny_prompt = generate_funny_image_prompt(message)
+                image_path = generate_image_from_prompt(funny_prompt, HF_API_TOKEN) 
 
-        return "", history, funny_image_path
+            return "", history, image_path
 
-    submit_btn.click(user_message_handler, [msg, chatbot], [msg, chatbot, funny_output])
-    msg.submit(user_message_handler, [msg, chatbot], [msg, chatbot, funny_output])
+    gen_image = gr.Checkbox(label="🎨 Generate Funny Image", value=True)
+    submit_btn.click(user_message_handler, [msg, chatbot, gen_image], [msg, chatbot, funny_output])
+    msg.submit(user_message_handler, [msg, chatbot, gen_image], [msg, chatbot, funny_output])
+
     gr.Examples(
         examples=[
             ["Drinking cold water causes a sore throat"],

@@ -492,3 +492,206 @@
 2025-05-05 09:10:22,160 [INFO] Real-time myth query detected: 'Cracking your knuckles causes arthritis'
 2025-05-05 09:10:23,144 [INFO] response: https://html.duckduckgo.com/html 200
 2025-05-05 09:10:26,129 [INFO] Adding new content to vector store.
+2025-05-06 17:47:46,940 [INFO] Use pytorch device_name: mps
+2025-05-06 17:47:46,940 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-06 17:47:48,241 [INFO] 📂 Loading existing vector store...
+2025-05-06 17:47:48,250 [INFO] Loading faiss.
+2025-05-06 17:47:48,297 [INFO] Successfully loaded faiss.
+2025-05-06 17:47:48,302 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-06 17:47:48,556 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-06 17:47:48,574 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-06 17:47:48,639 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-06 17:47:48,875 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-06 17:49:40,473 [INFO] Use pytorch device_name: mps
+2025-05-06 17:49:40,473 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-06 17:49:42,064 [INFO] 📂 Loading existing vector store...
+2025-05-06 17:49:42,074 [INFO] Loading faiss.
+2025-05-06 17:49:42,149 [INFO] Successfully loaded faiss.
+2025-05-06 17:49:42,154 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-06 17:49:42,413 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-06 17:49:42,430 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-06 17:49:42,640 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-06 17:49:42,713 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-06 17:49:53,898 [INFO] User claim: Humans only use 10% of their brain
+2025-05-06 17:50:30,436 [INFO] Use pytorch device_name: mps
+2025-05-06 17:50:30,436 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-06 17:50:31,783 [INFO] 📂 Loading existing vector store...
+2025-05-06 17:50:31,786 [INFO] Loading faiss.
+2025-05-06 17:50:31,865 [INFO] Successfully loaded faiss.
+2025-05-06 17:50:31,869 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-06 17:50:32,213 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-06 17:50:32,220 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-06 17:50:32,239 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-06 17:50:32,535 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-06 17:50:38,329 [INFO] User claim: Humans only use 10% of their brain
+2025-05-06 17:50:59,453 [INFO] Use pytorch device_name: mps
+2025-05-06 17:50:59,454 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-06 17:51:01,075 [INFO] 📂 Loading existing vector store...
+2025-05-06 17:51:01,085 [INFO] Loading faiss.
+2025-05-06 17:51:01,145 [INFO] Successfully loaded faiss.
+2025-05-06 17:51:01,150 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-06 17:51:01,470 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-06 17:51:01,486 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-06 17:51:01,609 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-06 17:51:01,778 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-06 17:51:06,246 [INFO] User claim: Humans only use 10% of their brain
+2025-05-06 17:51:06,247 [INFO] New Claim: Humans only use 10% of their brain
+2025-05-06 17:51:07,469 [INFO] Myth verdict given from memory.
+2025-05-06 17:51:33,867 [INFO] Use pytorch device_name: mps
+2025-05-06 17:51:33,868 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-06 17:51:35,337 [INFO] 📂 Loading existing vector store...
+2025-05-06 17:51:35,344 [INFO] Loading faiss.
+2025-05-06 17:51:35,392 [INFO] Successfully loaded faiss.
+2025-05-06 17:51:35,397 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-06 17:51:35,665 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-06 17:51:35,681 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-06 17:51:35,732 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-06 17:51:35,973 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-06 17:51:39,927 [INFO] User claim: Goldfish have a 3-second memory
+2025-05-06 17:51:39,929 [INFO] New Claim: Goldfish have a 3-second memory
+2025-05-06 17:51:40,579 [WARNING] Image generation failed: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev
+2025-05-06 17:51:40,665 [INFO] Myth verdict given from memory.
+2025-05-06 17:51:51,222 [INFO] User claim: 
+2025-05-06 17:51:51,223 [INFO] New Claim: 
+2025-05-06 17:51:51,458 [INFO] No relevant memory. Using web search.
+2025-05-06 17:51:51,458 [INFO] Real-time myth query detected: ''
+2025-05-06 17:51:51,644 [INFO] Error to search using lite backend: keywords is mandatory
+2025-05-06 17:51:51,644 [INFO] Error to search using html backend: keywords is mandatory
+2025-05-06 17:51:54,544 [INFO] User claim: Goldfish have a 3-second memory
+2025-05-06 17:51:54,545 [INFO] New Claim: Goldfish have a 3-second memory
+2025-05-06 17:51:55,545 [INFO] Myth verdict given from memory.
+2025-05-06 17:52:02,931 [INFO] User claim: Bats are blind
+2025-05-06 17:52:02,931 [INFO] New Claim: Bats are blind
+2025-05-06 17:52:03,078 [INFO] No relevant memory. Using web search.
+2025-05-06 17:52:03,078 [INFO] Real-time myth query detected: 'Bats are blind'
+2025-05-06 17:52:03,425 [WARNING] Image generation failed: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev
+2025-05-06 17:52:04,397 [INFO] response: https://lite.duckduckgo.com/lite/ 200
+2025-05-06 17:52:04,931 [INFO] Adding new content to vector store.
+2025-05-06 17:53:10,599 [INFO] Use pytorch device_name: mps
+2025-05-06 17:53:10,599 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-06 17:53:12,046 [INFO] 📂 Loading existing vector store...
+2025-05-06 17:53:12,050 [INFO] Loading faiss.
+2025-05-06 17:53:12,111 [INFO] Successfully loaded faiss.
+2025-05-06 17:53:12,116 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-06 17:53:12,398 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-06 17:53:12,417 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-06 17:53:12,639 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-06 17:53:12,711 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-06 17:53:16,964 [INFO] User claim: The Great Wall of China is visible from space
+2025-05-06 17:53:16,964 [INFO] New Claim: The Great Wall of China is visible from space
+2025-05-06 17:53:18,218 [WARNING] Image generation failed: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev
+2025-05-06 17:53:18,488 [INFO] Myth verdict given from memory.
+2025-05-06 18:01:32,606 [INFO] Use pytorch device_name: mps
+2025-05-06 18:01:32,607 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-06 18:01:34,063 [INFO] 📂 Loading existing vector store...
+2025-05-06 18:01:34,068 [INFO] Loading faiss.
+2025-05-06 18:01:34,143 [INFO] Successfully loaded faiss.
+2025-05-06 18:01:34,148 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-06 18:01:34,488 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-06 18:01:34,507 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-06 18:01:34,542 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-06 18:01:34,805 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-06 18:01:41,651 [INFO] User claim: Humans only use 10% of their brain
+2025-05-06 18:01:41,652 [INFO] New Claim: Humans only use 10% of their brain
+2025-05-06 18:01:42,409 [WARNING] Image generation failed: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev
+2025-05-06 18:01:42,788 [INFO] Myth verdict given from memory.
+2025-05-06 18:11:29,130 [INFO] User claim: Humans only use 10% of their brain
+2025-05-06 18:11:29,131 [INFO] New Claim: Humans only use 10% of their brain
+2025-05-06 18:11:34,056 [INFO] Myth verdict given from memory.
+2025-05-06 18:12:45,180 [INFO] Use pytorch device_name: mps
+2025-05-06 18:12:45,181 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-06 18:12:46,911 [INFO] 📂 Loading existing vector store...
+2025-05-06 18:12:46,917 [INFO] Loading faiss.
+2025-05-06 18:12:46,960 [INFO] Successfully loaded faiss.
+2025-05-06 18:12:46,965 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-06 18:12:47,229 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-06 18:12:47,244 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-06 18:12:47,405 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-06 18:12:47,552 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-06 18:13:51,081 [INFO] User claim: You can see the Great Wall of China from space
+2025-05-06 18:13:51,082 [INFO] New Claim: You can see the Great Wall of China from space
+2025-05-06 18:13:52,399 [INFO] Myth verdict given from memory.
+2025-05-06 18:13:58,505 [INFO] User claim: You can see the Great Wall of China from space
+2025-05-06 18:13:58,506 [INFO] New Claim: You can see the Great Wall of China from space
+2025-05-06 18:14:00,750 [INFO] Myth verdict given from memory.
+2025-05-06 18:15:59,482 [WARNING] Image generation failed: 504 Server Error: Gateway Time-out for url: https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev
+2025-05-06 18:17:49,504 [INFO] User claim: Goldfish have a 3-second memory
+2025-05-06 18:17:49,504 [INFO] New Claim: Goldfish have a 3-second memory
+2025-05-06 18:17:50,419 [INFO] Myth verdict given from memory.
+2025-05-06 18:19:50,296 [WARNING] Image generation failed: 504 Server Error: Gateway Time-out for url: https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev
+2025-05-06 18:20:40,111 [INFO] Use pytorch device_name: mps
+2025-05-06 18:20:40,112 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-06 18:20:42,148 [INFO] 📂 Loading existing vector store...
+2025-05-06 18:20:42,151 [INFO] Loading faiss.
+2025-05-06 18:20:42,222 [INFO] Successfully loaded faiss.
+2025-05-06 18:20:42,229 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-06 18:20:42,644 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-06 18:20:42,687 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-06 18:20:42,687 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-06 18:20:43,009 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-06 18:20:48,760 [INFO] User claim: You can see the Great Wall of China from space
+2025-05-06 18:20:48,760 [INFO] New Claim: You can see the Great Wall of China from space
+2025-05-06 18:20:49,782 [INFO] Myth verdict given from memory.
+2025-05-06 18:23:23,740 [INFO] Use pytorch device_name: mps
+2025-05-06 18:23:23,742 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-06 18:23:25,247 [INFO] 📂 Loading existing vector store...
+2025-05-06 18:23:25,254 [INFO] Loading faiss.
+2025-05-06 18:23:25,302 [INFO] Successfully loaded faiss.
+2025-05-06 18:23:25,307 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-06 18:23:25,560 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-06 18:23:25,575 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-06 18:23:25,962 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-06 18:23:25,962 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-06 18:23:41,341 [INFO] User claim: Humans only use 10% of their brain
+2025-05-06 18:23:41,342 [INFO] New Claim: Humans only use 10% of their brain
+2025-05-06 18:23:42,444 [INFO] Myth verdict given from memory.
+2025-05-06 18:23:50,483 [INFO] User claim: Goldfish have a 3-second memory
+2025-05-06 18:23:50,484 [INFO] New Claim: Goldfish have a 3-second memory
+2025-05-06 18:23:51,525 [INFO] Myth verdict given from memory.
+2025-05-06 18:25:34,095 [INFO] Use pytorch device_name: mps
+2025-05-06 18:25:34,095 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-06 18:25:40,474 [INFO] 📂 Loading existing vector store...
+2025-05-06 18:25:40,481 [INFO] Loading faiss.
+2025-05-06 18:25:40,537 [INFO] Successfully loaded faiss.
+2025-05-06 18:25:40,542 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-06 18:25:40,867 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-06 18:25:40,888 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-06 18:25:41,039 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-06 18:25:41,183 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-06 18:25:55,177 [INFO] User claim: Goldfish have a 3-second memory
+2025-05-06 18:25:55,178 [INFO] New Claim: Goldfish have a 3-second memory
+2025-05-06 18:25:56,182 [INFO] Myth verdict given from memory.
+2025-05-06 18:26:13,007 [INFO] Saved new image to cache for prompt: Imagine a cartoon goldfish sitting in front of a whiteboard, surrounded by fragmented memories written in erasable marker. The goldfish is wearing a "Forgetful Fin" badge and has a worried expression on its face. The memories range from the absurd (a image of a cat chasing its tail, scribbled with a cat's paw print) to the mundane (a sequence of fish food pellets being poured into the bowl).
+
+The memories fade away quickly, with only a faint outline remaining. The goldfish's eyes dart back and forth, trying to recall what it was just thinking about. The image is captioned with an arrow pointing to the goldfish's brain, saying "3 seconds" and a faint notation of a fish-sized SD card with the label "Cache."
+2025-05-06 18:27:11,771 [INFO] User claim: Goldfish have a 3-second memory
+2025-05-06 18:27:11,772 [INFO] New Claim: Goldfish have a 3-second memory
+2025-05-06 18:27:12,544 [INFO] Myth verdict given from memory.
+2025-05-06 18:30:14,516 [INFO] User claim: Goldfish have a 3-second memory
+2025-05-06 18:30:14,517 [INFO] New Claim: Goldfish have a 3-second memory
+2025-05-06 18:30:15,570 [INFO] Myth verdict given from memory.
+2025-05-06 18:30:29,218 [INFO] User claim: Vaccines cause autism
+2025-05-06 18:30:29,218 [INFO] New Claim: Vaccines cause autism
+2025-05-06 18:30:29,400 [INFO] No relevant memory. Using web search.
+2025-05-06 18:30:29,400 [INFO] Real-time myth query detected: 'Vaccines cause autism'
+2025-05-06 18:30:30,519 [INFO] response: https://lite.duckduckgo.com/lite/ 200
+2025-05-06 18:30:31,150 [INFO] Adding new content to vector store.
+2025-05-06 18:30:38,206 [INFO] User claim: Vaccines cause autism
+2025-05-06 18:30:38,206 [INFO] New Claim: Vaccines cause autism
+2025-05-06 18:30:38,808 [INFO] Myth verdict given from memory.
+2025-05-06 18:32:47,952 [INFO] User claim: Vaccines cause autism
+2025-05-06 18:32:47,953 [INFO] New Claim: Vaccines cause autism
+2025-05-06 18:32:50,600 [INFO] Myth verdict given from memory.
+2025-05-06 18:35:05,965 [INFO] Use pytorch device_name: mps
+2025-05-06 18:35:05,966 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-06 18:35:07,386 [INFO] 📂 Loading existing vector store...
+2025-05-06 18:35:07,388 [INFO] Loading faiss.
+2025-05-06 18:35:07,431 [INFO] Successfully loaded faiss.
+2025-05-06 18:35:07,435 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-06 18:35:07,683 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-06 18:35:07,706 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-06 18:35:08,076 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-06 18:35:08,079 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-06 18:36:42,715 [INFO] User claim: Bats are blind
+2025-05-06 18:36:42,717 [INFO] New Claim: Bats are blind
+2025-05-06 18:36:44,293 [INFO] Myth verdict given from memory.
