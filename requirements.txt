@@ -6,3 +6,5 @@ faiss-cpu
 langchain-text-splitters
 duckduckgo-search
 gradio
+requests
+transformers
