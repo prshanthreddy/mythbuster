@@ -695,3 +695,74 @@ The memories fade away quickly, with only a faint outline remaining. The goldfis
 2025-05-06 18:36:42,715 [INFO] User claim: Bats are blind
 2025-05-06 18:36:42,717 [INFO] New Claim: Bats are blind
 2025-05-06 18:36:44,293 [INFO] Myth verdict given from memory.
+2025-05-06 19:27:24,597 [INFO] User claim: Humans only use 10% of their brain
+2025-05-06 19:27:24,599 [INFO] New Claim: Humans only use 10% of their brain
+2025-05-06 19:27:26,039 [INFO] Myth verdict given from memory.
+2025-05-06 19:40:16,597 [INFO] Use pytorch device_name: mps
+2025-05-06 19:40:16,599 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-06 19:40:18,548 [INFO] 📂 Loading existing vector store...
+2025-05-06 19:40:18,554 [INFO] Loading faiss.
+2025-05-06 19:40:18,674 [INFO] Successfully loaded faiss.
+2025-05-06 19:40:18,679 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-06 19:40:18,942 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-06 19:40:18,956 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-06 19:40:19,142 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-06 19:40:19,248 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-06 19:40:40,072 [INFO] User claim: Humans only use 10% of their brain
+2025-05-06 19:40:40,073 [INFO] New Claim: Humans only use 10% of their brain
+2025-05-06 19:40:41,856 [INFO] Myth verdict given from memory.
+2025-05-06 19:41:13,207 [INFO] Use pytorch device_name: mps
+2025-05-06 19:41:13,207 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-06 19:41:14,734 [INFO] 📂 Loading existing vector store...
+2025-05-06 19:41:14,742 [INFO] Loading faiss.
+2025-05-06 19:41:14,811 [INFO] Successfully loaded faiss.
+2025-05-06 19:41:14,819 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-06 19:41:15,183 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-06 19:41:15,220 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-06 19:41:15,250 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-06 19:41:15,555 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-06 19:41:19,722 [INFO] User claim: Drinking cold water causes a sore throat
+2025-05-06 19:41:19,723 [INFO] New Claim: Drinking cold water causes a sore throat
+2025-05-06 19:41:20,658 [INFO] Myth verdict given from memory.
+2025-05-06 19:43:31,158 [INFO] Use pytorch device_name: mps
+2025-05-06 19:43:31,159 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-06 19:43:34,311 [INFO] 📂 Loading existing vector store...
+2025-05-06 19:43:34,318 [INFO] Loading faiss.
+2025-05-06 19:43:34,376 [INFO] Successfully loaded faiss.
+2025-05-06 19:43:34,381 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-06 19:43:34,772 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-06 19:44:37,217 [INFO] Use pytorch device_name: mps
+2025-05-06 19:44:37,218 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-06 19:44:38,486 [INFO] 📂 Loading existing vector store...
+2025-05-06 19:44:38,495 [INFO] Loading faiss.
+2025-05-06 19:44:38,575 [INFO] Successfully loaded faiss.
+2025-05-06 19:44:38,581 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-06 19:44:38,869 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-06 19:44:38,886 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-06 19:44:38,958 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-06 19:44:39,171 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-06 19:44:47,766 [INFO] User claim: Humans only use 10% of their brain
+2025-05-06 19:44:47,766 [INFO] New Claim: Humans only use 10% of their brain
+2025-05-06 19:44:48,780 [INFO] Myth verdict given from memory.
+2025-05-06 19:45:11,311 [INFO] User claim: Drinking alcohol may increse your heart health
+2025-05-06 19:45:11,312 [INFO] New Claim: Drinking alcohol may increse your heart health
+2025-05-06 19:45:11,742 [INFO] No relevant memory. Using web search.
+2025-05-06 19:45:11,743 [INFO] Real-time myth query detected: 'Drinking alcohol may increse your heart health'
+2025-05-06 19:45:13,258 [INFO] response: https://html.duckduckgo.com/html 200
+2025-05-06 19:45:13,858 [INFO] Adding new content to vector store.
+2025-05-06 19:45:32,890 [INFO] User claim: Drinking alcohol may increse your heart health
+2025-05-06 19:45:32,891 [INFO] New Claim: Drinking alcohol may increse your heart health
+2025-05-06 19:45:33,590 [INFO] Myth verdict given from memory.
+2025-05-07 10:33:51,910 [INFO] Use pytorch device_name: mps
+2025-05-07 10:33:51,911 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 10:33:53,483 [INFO] 📂 Loading existing vector store...
+2025-05-07 10:33:53,486 [INFO] Loading faiss.
+2025-05-07 10:33:53,548 [INFO] Successfully loaded faiss.
+2025-05-07 10:33:53,553 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-07 10:33:53,828 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-07 10:33:53,845 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-07 10:33:54,049 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-07 10:33:54,137 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-07 10:47:27,511 [INFO] User claim: Humans only use 10% of their brain
+2025-05-07 10:47:27,514 [INFO] New Claim: Humans only use 10% of their brain
+2025-05-07 10:47:29,137 [INFO] Myth verdict given from memory.

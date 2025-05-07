@@ -51,7 +51,6 @@ else:
 
 splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200, add_start_index=True)
 
-
 # ---------------- GROQ LLM ----------------
 
 def query_groq_llm(prompt: str) -> str:
@@ -112,19 +111,22 @@ def generate_image_from_prompt(prompt: str, api_token: str, output_path="funny_o
     response = requests.post(url, headers=headers, json=payload)
     response.raise_for_status()
 
-    # Save image
     with open(output_path, "wb") as f:
         f.write(response.content)
 
     return output_path
-
 # ---------------- DUCKDUCKGO TOOL ----------------
 
 @tool
 def search_tool(query: str) -> str:
     """Search the web using DuckDuckGo."""
-    search = DuckDuckGoSearchResults()
-    return search.run(query)
+    try:
+        search = DuckDuckGoSearchResults()
+        return search.run(query)
+    except Exception as e:
+        logger.error(f"DuckDuckGo search failed: {e}")
+        return "No results due to error or rate limiting."
+
 
 # ---------------- UTILS ----------------
 
@@ -137,9 +139,6 @@ def is_vague(text: str) -> bool:
     ]
     return any(phrase in text.lower() for phrase in vague_phrases)
 
-def is_realtime_query(text: str) -> bool:
-    keywords = ["current", "today", "latest", "now", "who is", "trending", "new", "recent"]
-    return any(k in text.lower() for k in keywords)
 
 # ---------------- FALLBACK WEB SEARCH ----------------
 
@@ -212,7 +211,6 @@ with gr.Blocks(title="MythBuster AI") as iface:
     gr.Markdown("""
     # 🕵️ MythBuster AI  
     **Ask me about any myth, rumor, or common belief — I'll investigate it and give you a verdict!**  
-    <br>
     💡 I classify myths as:
     - ✅ **CONFIRMED**
     - ❓ **PLAUSIBLE**
@@ -222,7 +220,6 @@ with gr.Blocks(title="MythBuster AI") as iface:
 
     with gr.Row():
         chatbot = gr.Chatbot(label="🧠 Myth Verdicts", height=400, type="messages")
-        # logbox = gr.Textbox(label="📜 Logs", lines=12, interactive=False)
         funny_output = gr.Image(label="😂 Funny Image")
 
     with gr.Row():
@@ -231,23 +228,35 @@ with gr.Blocks(title="MythBuster AI") as iface:
             placeholder="e.g., 'Drinking cold water causes a sore throat'",
             show_label=False
         )
+        gen_image = gr.Checkbox(label="🎨 Generate Funny Image", value=True)
         submit_btn = gr.Button("🚀 Bust This Myth")
 
+    def user_message_handler(message, history, generate_img):
+        logger.info(f"User claim: {message}")
+        if history is None:
+            history = []
 
-        def user_message_handler(message, history, generate_img):
-            logger.info(f"User claim: {message}")
+        try:
             response = ask(message)
-            history.append({"role": "user", "content": message})
-            history.append({"role": "assistant", "content": response})
+        except Exception as e:
+            response = f"❌ Error: {e}"
+            logger.error(str(e))
+            return "", history
 
-            image_path = None
-            if generate_img:
+        history.append({"role": "user", "content": message})
+        history.append({"role": "assistant", "content": response})
+
+        image_path = None
+        if generate_img:
+            try:
                 funny_prompt = generate_funny_image_prompt(message)
-                image_path = generate_image_from_prompt(funny_prompt, HF_API_TOKEN) 
+                image_path = generate_image_from_prompt(funny_prompt, HF_API_TOKEN)
+            except Exception as e:
+                logger.error(f"Image generation error: {e}")
+                image_path = None
 
-            return "", history, image_path
+        return "", history, image_path
 
-    gen_image = gr.Checkbox(label="🎨 Generate Funny Image", value=True)
     submit_btn.click(user_message_handler, [msg, chatbot, gen_image], [msg, chatbot, funny_output])
     msg.submit(user_message_handler, [msg, chatbot, gen_image], [msg, chatbot, funny_output])
 
@@ -265,9 +274,8 @@ with gr.Blocks(title="MythBuster AI") as iface:
             ["The Great Wall of China is visible from space"]
         ],
         inputs=msg,
-        outputs=[msg, chatbot],
-        label="Examples",
-        fn=user_message_handler
+        label="Examples"
     )
+
 if __name__ == "__main__":
     iface.launch(share=True)
