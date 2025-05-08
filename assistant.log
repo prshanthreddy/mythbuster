@@ -695,3 +695,177 @@ The memories fade away quickly, with only a faint outline remaining. The goldfis
 2025-05-06 18:36:42,715 [INFO] User claim: Bats are blind
 2025-05-06 18:36:42,717 [INFO] New Claim: Bats are blind
 2025-05-06 18:36:44,293 [INFO] Myth verdict given from memory.
+2025-05-07 19:57:00,255 [INFO] Use pytorch device_name: cuda:0
+2025-05-07 19:57:00,256 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 19:57:01,235 [INFO] 📂 Loading existing vector store...
+2025-05-07 19:57:01,237 [INFO] Loading faiss with AVX2 support.
+2025-05-07 19:57:01,252 [INFO] Successfully loaded faiss with AVX2 support.
+2025-05-07 19:57:01,255 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-07 19:57:01,531 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-07 19:57:01,544 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-07 19:57:01,766 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-07 19:57:01,832 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-07 19:57:22,065 [INFO] Use pytorch device_name: cuda:0
+2025-05-07 19:57:22,066 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 19:57:22,871 [INFO] 📂 Loading existing vector store...
+2025-05-07 19:57:22,872 [INFO] Loading faiss with AVX2 support.
+2025-05-07 19:57:22,887 [INFO] Successfully loaded faiss with AVX2 support.
+2025-05-07 19:57:22,889 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-07 19:57:23,144 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-07 19:57:23,156 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-07 19:57:23,295 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-07 19:57:23,443 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-07 19:57:34,027 [INFO] User claim: Drinking cold water causes a sore throat
+2025-05-07 19:57:34,027 [INFO] New Claim: Drinking cold water causes a sore throat
+2025-05-07 19:57:35,215 [INFO] Myth verdict given from memory.
+2025-05-07 19:59:33,978 [INFO] User claim: Lightning never strikes the same place twice
+2025-05-07 19:59:33,978 [INFO] New Claim: Lightning never strikes the same place twice
+2025-05-07 19:59:34,021 [INFO] No relevant memory. Using web search.
+2025-05-07 19:59:34,022 [INFO] Real-time myth query detected: 'Lightning never strikes the same place twice'
+2025-05-07 19:59:35,226 [INFO] response: https://lite.duckduckgo.com/lite/ 200
+2025-05-07 19:59:35,865 [INFO] Adding new content to vector store.
+2025-05-07 20:01:40,910 [INFO] User claim: COVID-19 vaccines contain microchips
+2025-05-07 20:01:40,910 [INFO] New Claim: COVID-19 vaccines contain microchips
+2025-05-07 20:01:40,939 [INFO] No relevant memory. Using web search.
+2025-05-07 20:01:40,940 [INFO] Real-time myth query detected: 'COVID-19 vaccines contain microchips'
+2025-05-07 20:01:41,997 [INFO] response: https://lite.duckduckgo.com/lite/ 200
+2025-05-07 20:01:42,630 [INFO] Adding new content to vector store.
+2025-05-07 20:04:10,129 [INFO] Use pytorch device_name: cuda:0
+2025-05-07 20:04:10,129 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 20:04:12,304 [INFO] 📂 Loading existing vector store...
+2025-05-07 20:04:12,305 [INFO] Loading faiss with AVX2 support.
+2025-05-07 20:04:12,316 [INFO] Successfully loaded faiss with AVX2 support.
+2025-05-07 20:04:12,319 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-07 20:04:12,577 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-07 20:04:12,590 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-07 20:04:12,788 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-07 20:04:12,885 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-07 20:04:20,943 [INFO] User claim: COVID-19 vaccines contain microchips
+2025-05-07 20:04:20,943 [INFO] New Claim: COVID-19 vaccines contain microchips
+2025-05-07 20:04:21,734 [INFO] Myth verdict given from memory.
+2025-05-07 20:04:22,152 [INFO] Funny image prompt: {'id': 'chatcmpl-2424a9e2-db7b-4b9d-977d-afcfadd90ff0', 'object': 'chat.completion', 'created': 1746666263, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Here\'s a potential image:\n\nA cartoon illustration of a vaccine syringe transforming into a miniature computer, with a winking, anthropomorphized microchip peeking out. The microchip is sporting a pair of sunglasses and a "I\'m not a doctor" badge. It\'s sitting on a tiny laptop keyboard, surrounded by scattered COVID-19 virus particles that are all tapping away on their tiny laptops.\n\nThe syringe-turned-computer has a "Microchip-R-Us" logo on the side and a tiny pair of antennas on top, broadcasting a signal to a nearby smartphone that has a vaccine appointment calendar app open, complete with scheduled "update" notifications.\n\nIn the background, a faint internet café atmosphere is visible, with COVID-19 viruses typing away on tiny cafes, fueled by gallons of hand sanitizer.\n\nThe overall effect is a whimsical yet absurd depiction of the alleged plot, poking fun at the idea that vaccines contain microchips while also acknowledging the widespread concern about data privacy.'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 0.018569021999999998, 'prompt_tokens': 68, 'prompt_time': 0.013069228, 'completion_tokens': 201, 'completion_time': 0.1675, 'total_tokens': 269, 'total_time': 0.180569228}, 'usage_breakdown': {'models': None}, 'system_fingerprint': 'fp_dadc9d6142', 'x_groq': {'id': 'req_01jtppr59tf6mtsawc82nea5vg'}}
+2025-05-07 20:06:54,968 [INFO] Use pytorch device_name: cuda:0
+2025-05-07 20:06:54,968 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-07 20:06:55,833 [INFO] 📂 Loading existing vector store...
+2025-05-07 20:06:55,834 [INFO] Loading faiss with AVX2 support.
+2025-05-07 20:06:55,844 [INFO] Successfully loaded faiss with AVX2 support.
+2025-05-07 20:06:55,846 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-07 20:06:56,113 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-07 20:06:56,143 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-07 20:06:56,443 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-07 20:06:56,451 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-07 20:07:06,838 [INFO] User claim: COVID-19 vaccines contain microchips
+2025-05-07 20:07:06,839 [INFO] New Claim: COVID-19 vaccines contain microchips
+2025-05-07 20:07:08,147 [INFO] Myth verdict given from memory.
+2025-05-08 08:55:41,660 [INFO] Use pytorch device_name: cuda:0
+2025-05-08 08:55:41,661 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-08 08:55:43,007 [INFO] 📂 Loading existing vector store...
+2025-05-08 08:55:43,011 [INFO] Loading faiss with AVX2 support.
+2025-05-08 08:55:43,174 [INFO] Successfully loaded faiss with AVX2 support.
+2025-05-08 08:55:43,196 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-08 08:55:43,492 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-08 08:55:43,507 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-08 08:55:43,702 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-08 08:55:43,809 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-08 08:56:54,202 [INFO] User claim: Drinking cold water causes a sore throat
+2025-05-08 08:56:54,204 [INFO] New Claim: Drinking cold water causes a sore throat
+2025-05-08 08:56:55,442 [INFO] Myth verdict given from memory.
+2025-05-08 08:56:55,747 [INFO] Funny image prompt: {'id': 'chatcmpl-4f0b0fe1-41a8-48b3-bb86-d476fcd471e1', 'object': 'chat.completion', 'created': 1746712615, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Image: A cartoon of a person taking a big gulp of icy cold water, only to have a giant, cartoonish "SORE THROAT GNOME" pop out from the depths of their neck, wearing a Viking helmet and wielding a tiny sword. The gnome is surrounded by a halo of tiny, glowing "ouchies" as it lets out a mighty "Throoooooow!" cry, wobbling the person\'s head back and forth like a puppet on a string.'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 0.08538424700000001, 'prompt_tokens': 68, 'prompt_time': 0.008936167, 'completion_tokens': 99, 'completion_time': 0.0825, 'total_tokens': 167, 'total_time': 0.091436167}, 'usage_breakdown': {'models': None}, 'system_fingerprint': 'fp_dadc9d6142', 'x_groq': {'id': 'req_01jtr2ypkaf1yrkg68d0vzhrjm'}}
+2025-05-08 08:59:25,005 [INFO] User claim: Drinking cold water causes a sore throat
+2025-05-08 08:59:25,006 [INFO] New Claim: Drinking cold water causes a sore throat
+2025-05-08 08:59:26,028 [INFO] Myth verdict given from memory.
+2025-05-08 09:07:07,143 [INFO] User claim: Goldfish have a 3-second memory
+2025-05-08 09:07:07,145 [INFO] New Claim: Goldfish have a 3-second memory
+2025-05-08 09:07:09,619 [INFO] Myth verdict given from memory.
+2025-05-08 09:07:10,456 [INFO] Funny image prompt: {'id': 'chatcmpl-b9dcc92c-50fa-489f-90ba-3631615d551c', 'object': 'chat.completion', 'created': 1746713230, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Imagine a goldfish perched on a pedestal, surrounded by a chaotic aquarium scene. In the background, a ticking clock looms, emphasizing the fleeting nature of memory.\n\nThe goldfish itself is wearing a tiny lab coat and holding a miniature blackboard. On the blackboard, equation-style, it\'s scribbling an equation: 2 + 2 = ?... 3... 5... ?\n\nSuddenly, a mischievous clownfish pops out from behind a nearby coral, snatches the blackboard, and erases the entire equation with a giant, bright pink eraser. The goldfish looks on in shock, its fins flailing in distress.\n\nTo the left of the pedestal, a notepad with a single line is attached, bearing the phrase "Forgot my algebra homework... again!"\n\nOn the walls of the aquarium, various reminders and ephemeral notes are stuck, like "Borrowed algae from neighbor...", "Forgot to eat...", and "Flashed at pufferfish... again.". In the distance, a small "Forget-me-not" flower blooms, shrouded in a faint purple haze, symbolizing the goldfish\'s notorious memory span.\n\nThis image pokes fun at the idea that goldfish have a meager 3-second memory by exaggerating their forgetfulness to absurd levels, showcasing the consequences of this mythological limitation.'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 0.44935516000000003, 'prompt_tokens': 68, 'prompt_time': 0.012908973, 'completion_tokens': 275, 'completion_time': 0.229166667, 'total_tokens': 343, 'total_time': 0.24207564}, 'usage_breakdown': {'models': None}, 'system_fingerprint': 'fp_179b0f92c9', 'x_groq': {'id': 'req_01jtr3hedeesysdg3ywyjecffv'}}
+2025-05-08 09:09:21,264 [INFO] Use pytorch device_name: cuda:0
+2025-05-08 09:09:21,265 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-08 09:09:22,266 [INFO] 📂 Loading existing vector store...
+2025-05-08 09:09:22,267 [INFO] Loading faiss with AVX2 support.
+2025-05-08 09:09:22,289 [INFO] Successfully loaded faiss with AVX2 support.
+2025-05-08 09:09:22,296 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-08 09:09:22,621 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-08 09:09:22,647 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-08 09:09:22,815 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-08 09:09:22,951 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-08 09:09:33,762 [INFO] User claim: Humans only use 10% of their brain
+2025-05-08 09:09:33,763 [INFO] New Claim: Humans only use 10% of their brain
+2025-05-08 09:09:34,512 [INFO] Myth verdict given from memory.
+2025-05-08 09:09:42,803 [INFO] User claim: Eating carrots improves your eyesight
+2025-05-08 09:09:42,804 [INFO] New Claim: Eating carrots improves your eyesight
+2025-05-08 09:09:43,322 [INFO] Myth verdict given from memory.
+2025-05-08 09:09:43,937 [INFO] Funny image prompt: {'id': 'chatcmpl-d26c476f-1181-4751-a9fa-df452e4f1c59', 'object': 'chat.completion', 'created': 1746713383, 'model': 'llama3-8b-8192', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'The infamous "carrot for the peepers" theory! Here\'s a visual for you:\n\nImagine a cartoon character with a pair of ridiculously large, floppy goggles perched on their forehead. They\'re munching on a giant, bright orange carrot, with shreds of it trailing down their chin. The goggles are decorated with tiny googly eyes, and a label on the side reads "20/20 Vision (courtesy of beta-carotene)!"\n\nMeanwhile, tiny cartoon rays of light are shooting out of the carrot, doing little pirouettes around the character\'s head before zooming into their eyes. The surrounding background is filled with blurry, scribbled scenes of everyday life – people walking into lamp posts, tripping over their own feet, etc. – with X\'s through them, symbolizing the "fix" that the carrot is supposed to provide.'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'queue_time': 0.230742577, 'prompt_tokens': 67, 'prompt_time': 0.012794534, 'completion_tokens': 177, 'completion_time': 0.1475, 'total_tokens': 244, 'total_time': 0.160294534}, 'usage_breakdown': {'models': None}, 'system_fingerprint': 'fp_179b0f92c9', 'x_groq': {'id': 'req_01jtr3p4g0fegamj15hrcrgmnv'}}
+2025-05-08 09:12:18,039 [INFO] Use pytorch device_name: cuda:0
+2025-05-08 09:12:18,039 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-08 09:12:18,893 [INFO] 📂 Loading existing vector store...
+2025-05-08 09:12:18,894 [INFO] Loading faiss with AVX2 support.
+2025-05-08 09:12:18,905 [INFO] Successfully loaded faiss with AVX2 support.
+2025-05-08 09:12:18,907 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-08 09:12:19,157 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-08 09:12:19,172 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-08 09:12:19,370 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-08 09:12:19,459 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-08 09:12:24,927 [INFO] User claim: Drinking cold water causes a sore throat
+2025-05-08 09:12:24,927 [INFO] New Claim: Drinking cold water causes a sore throat
+2025-05-08 09:12:25,844 [INFO] Myth verdict given from memory.
+2025-05-08 09:15:11,992 [INFO] User claim: Humans only use 10% of their brain
+2025-05-08 09:15:11,993 [INFO] New Claim: Humans only use 10% of their brain
+2025-05-08 09:15:12,632 [INFO] Myth verdict given from memory.
+2025-05-08 09:17:32,602 [INFO] User claim: Vaccines cause autism
+2025-05-08 09:17:32,602 [INFO] New Claim: Vaccines cause autism
+2025-05-08 09:17:33,663 [INFO] Myth verdict given from memory.
+2025-05-08 09:18:03,968 [INFO] Use pytorch device_name: cuda:0
+2025-05-08 09:18:03,969 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-08 09:18:05,598 [INFO] 📂 Loading existing vector store...
+2025-05-08 09:18:05,599 [INFO] Loading faiss with AVX2 support.
+2025-05-08 09:18:05,611 [INFO] Successfully loaded faiss with AVX2 support.
+2025-05-08 09:18:05,614 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-08 09:18:05,857 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-08 09:18:05,871 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-08 09:18:06,312 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-08 09:18:06,323 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-08 09:18:18,104 [INFO] User claim: Humans only use 10% of their brain
+2025-05-08 09:18:18,104 [INFO] New Claim: Humans only use 10% of their brain
+2025-05-08 09:18:18,910 [INFO] Myth verdict given from memory.
+2025-05-08 09:19:07,174 [INFO] Use pytorch device_name: cuda:0
+2025-05-08 09:19:07,175 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-08 09:19:08,359 [INFO] 📂 Loading existing vector store...
+2025-05-08 09:19:08,359 [INFO] Loading faiss with AVX2 support.
+2025-05-08 09:19:08,370 [INFO] Successfully loaded faiss with AVX2 support.
+2025-05-08 09:19:08,372 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-08 09:19:08,620 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-08 09:19:08,632 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-08 09:19:08,829 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-08 09:19:08,915 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-08 09:19:14,088 [INFO] User claim: Humans only use 10% of their brain
+2025-05-08 09:19:14,088 [INFO] New Claim: Humans only use 10% of their brain
+2025-05-08 09:19:14,863 [INFO] Myth verdict given from memory.
+2025-05-08 09:43:01,932 [INFO] User claim: Japser ANdra uses on;y 10% her brain
+2025-05-08 09:43:01,933 [INFO] New Claim: Japser ANdra uses on;y 10% her brain
+2025-05-08 09:43:01,957 [INFO] No relevant memory. Using web search.
+2025-05-08 09:43:01,957 [INFO] Real-time myth query detected: 'Japser ANdra uses on;y 10% her brain'
+2025-05-08 09:43:03,040 [INFO] response: https://lite.duckduckgo.com/lite/ 200
+2025-05-08 09:43:04,096 [INFO] Adding new content to vector store.
+2025-05-08 09:46:21,681 [INFO] Use pytorch device_name: cuda:0
+2025-05-08 09:46:21,681 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-08 09:46:22,547 [INFO] 📂 Loading existing vector store...
+2025-05-08 09:46:22,548 [INFO] Loading faiss with AVX2 support.
+2025-05-08 09:46:22,559 [INFO] Successfully loaded faiss with AVX2 support.
+2025-05-08 09:46:22,562 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-08 09:46:22,807 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-08 09:46:22,821 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-08 09:46:23,046 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-08 09:46:23,119 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-08 10:04:46,670 [INFO] Use pytorch device_name: cuda:0
+2025-05-08 10:04:46,670 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-08 10:04:47,654 [INFO] 📂 Loading existing vector store...
+2025-05-08 10:04:47,655 [INFO] Loading faiss with AVX2 support.
+2025-05-08 10:04:47,666 [INFO] Successfully loaded faiss with AVX2 support.
+2025-05-08 10:04:47,669 [INFO] Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-08 10:04:47,935 [INFO] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-08 10:04:47,946 [INFO] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-08 10:04:48,233 [INFO] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-08 10:04:48,244 [INFO] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-05-08 10:04:56,281 [INFO] User claim: Humans only use 10% of their brain
+2025-05-08 10:04:56,281 [INFO] New Claim: Humans only use 10% of their brain
+2025-05-08 10:04:58,858 [INFO] Myth verdict given from memory.

@@ -1,3 +1,5 @@
 .env
 /myenv
-/faiss_index
+.venv
+/faiss_index 
+assistant.log
