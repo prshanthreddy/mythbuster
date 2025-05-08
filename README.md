@@ -8,6 +8,7 @@ MythBuster AI is an intelligent assistant that investigates myths, rumors, and c
 - 🌐 **Real-time Web Search** with DuckDuckGo for recent or unknown claims
 - 🧠 **Vector Store Memory** to retain and reuse learned evidence
 - 🤖 **LLM Verdict Generation** via Groq API using LLaMA 3
+- 🎨 **Optional Funny Image Generation** using Hugging Face Inference API (black-forest-labs/FLUX.1-dev)
 - 🧰 **Gradio Interface** for an interactive, user-friendly chatbot
 - 📜 **Logging** of claims, verdicts, and behavior for transparency
 
@@ -20,6 +21,7 @@ MythBuster AI is an intelligent assistant that investigates myths, rumors, and c
 - **DuckDuckGoSearchResults** (web fallback)
 - **HuggingFace Embeddings**
 - **Groq API** (LLaMA 3 model)
+- **Hugging Face Inference API** (optional funny image generation)
 - **Dotenv** (for secure API key management)
 
 ## 📦 Setup Instructions
@@ -27,8 +29,8 @@ MythBuster AI is an intelligent assistant that investigates myths, rumors, and c
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/mythbuster-ai.git
-   cd mythbuster-ai
+   git clone https://github.com/prshanthreddy/mythbuster.git
+   cd mythbuster
    ```
 
 2. **Create and Activate a Virtual Environment**
@@ -46,10 +48,11 @@ MythBuster AI is an intelligent assistant that investigates myths, rumors, and c
 
 4. **Set Environment Variables**
 
-   Create a `.env` file in the root directory:
+   Create a `.env` file in the root directory with the following content:
 
    ```env
    GROQ_API_KEY=your_groq_api_key_here
+   HF_API_TOKEN=your_huggingface_api_token_here
    ```
 
 5. **Run the App**
@@ -88,8 +91,9 @@ MythBuster AI is an intelligent assistant that investigates myths, rumors, and c
 3. **If Memory Vague or Missing** → uses DuckDuckGo tool to fetch relevant web results
 4. **Prompt LLM** → send claim + context to Groq LLaMA 3 API
 5. **Verdict Returned** → BUSTED / PLAUSIBLE / CONFIRMED with reasoning
-6. **Log + Store Evidence** → saves new info into FAISS vector DB
+6. **Optional Funny Image Generation** → if enabled via checkbox, uses Groq to generate a humorous image prompt, then calls Hugging Face’s `black-forest-labs/FLUX.1-dev` model to generate a matching image
+7. **Log + Store Evidence** → saves new info into FAISS vector DB
 
 ## 🔐 Security
 
-Make sure not to share your `.env` file or `GROQ_API_KEY`. Keep your API keys secure.
+Make sure not to share your `.env` file or any API keys. Keep your `GROQ_API_KEY` and `HF_API_TOKEN` secure and never commit them to version control.
