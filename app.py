@@ -14,9 +14,12 @@ from langchain_community.vectorstores import FAISS
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 from langchain_community.tools import DuckDuckGoSearchResults
 from duckduckgo_search.exceptions import DuckDuckGoSearchException
+import torch
+import faiss
 
 # ---------------- ENV & LOGGING ----------------
 
+os.environ["STREAMLIT_WATCHER_TYPE"] = "none"  # Avoid torch watcher crash
 load_dotenv()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 HF_API_TOKEN = os.getenv("HF_API_TOKEN")
@@ -32,10 +35,10 @@ embeddings = HuggingFaceEmbeddings(model_name=embedding_model_name)
 
 vector_store_path = "faiss_index"
 if Path(vector_store_path).exists():
-    logger.info("📂 Loading existing vector store...")
+    logger.info("\U0001F4C2 Loading existing vector store...")
     vector_store = FAISS.load_local(vector_store_path, embeddings, allow_dangerous_deserialization=True)
 else:
-    logger.info("📦 Initializing new vector store...")
+    logger.info("\U0001F4E6 Initializing new vector store...")
     dummy_doc = Document(page_content="Init doc")
     vector_store = FAISS.from_documents([dummy_doc], embedding=embeddings)
     vector_store.index.reset()
@@ -70,7 +73,6 @@ def query_groq_llm(prompt: str) -> str:
     response.raise_for_status()
     return response.json()['choices'][0]['message']['content']
 
-
 def generate_funny_image_prompt(myth: str) -> str:
     system_prompt = (
         "You are a creative visual humorist. Given a myth or false belief, generate a funny or absurd description of an image "
@@ -95,17 +97,22 @@ def generate_funny_image_prompt(myth: str) -> str:
     response.raise_for_status()
     return response.json()["choices"][0]["message"]["content"].strip()
 
-
-def generate_image_from_prompt(prompt: str, api_token: str, output_path="funny_output.jpg") -> str:
+def generate_image_from_prompt(prompt: str, api_token: str, output_path="funny_output.jpg", retries=3) -> str:
     url = "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev"
     headers = {"Authorization": f"Bearer {api_token}"}
     payload = {"inputs": prompt}
-    response = requests.post(url, headers=headers, json=payload)
-    response.raise_for_status()
-    with open(output_path, "wb") as f:
-        f.write(response.content)
-    return output_path
 
+    for attempt in range(retries):
+        response = requests.post(url, headers=headers, json=payload)
+        if response.status_code == 504:
+            logging.warning(f"Timeout. Retrying {attempt + 1}/{retries}...")
+            continue
+        response.raise_for_status()
+        with open(output_path, "wb") as f:
+            f.write(response.content)
+        return output_path
+
+    raise Exception("Image generation failed after retries.")
 
 def use_tool_only(claim: str) -> tuple[str, str]:
     logger.info(f"Real-time myth query detected: '{claim}'")
@@ -134,7 +141,6 @@ Determine if the claim is BUSTED, PLAUSIBLE, or CONFIRMED. Explain briefly.
         vector_store.save_local(vector_store_path)
     return response, "web"
 
-
 def ask(claim: str) -> tuple[str, str]:
     logger.info(f"New Claim: {claim}")
     retrieved_docs = vector_store.similarity_search_with_score(claim, k=5)
@@ -160,10 +166,10 @@ Determine if the claim is BUSTED, PLAUSIBLE, or CONFIRMED. Explain briefly.
 # ---------------- STREAMLIT UI ----------------
 
 st.set_page_config(page_title="MythBuster AI", layout="centered")
-st.title("🕵️ MythBuster AI")
+st.title("\U0001F575 MythBuster AI")
 st.markdown("Ask me about any myth, rumor, or belief. I’ll classify it as **BUSTED**, **PLAUSIBLE**, or **CONFIRMED**.")
 
-st.markdown("### 💡 Choose an example or enter your own claim")
+st.markdown("### \U0001F4A1 Choose an example or enter your own claim")
 
 example_claims = [
     "",
@@ -179,16 +185,16 @@ example_claims = [
 ]
 
 selected_example = st.selectbox("Examples", example_claims, index=0)
-custom_input = st.text_input("✍️ Or type your own:", placeholder="e.g., 'Goldfish have a 3-second memory'")
-generate_image = st.checkbox("🎨 Generate Funny Image", value=True)
+custom_input = st.text_input("\u270D\ufe0f Or type your own:", placeholder="e.g., 'Goldfish have a 3-second memory'")
+generate_image = st.checkbox("\U0001F3A8 Generate Funny Image", value=True)
 
 # Determine which input to use
 final_claim = custom_input.strip() if custom_input.strip() else selected_example.strip()
 
-if st.button("🚀 Bust This Myth") and final_claim:
+if st.button("\U0001F680 Bust This Myth") and final_claim:
     with st.spinner("Analyzing myth..."):
         verdict, source = ask(final_claim)
-        label = "🧠 Memory Verdict" if source == "memory" else "🌐 Web Verdict"
+        label = "\U0001F9E0 Memory Verdict" if source == "memory" else "\U0001F310 Web Verdict"
         st.markdown(f"### {label}\n{verdict}")
 
         if generate_image:
