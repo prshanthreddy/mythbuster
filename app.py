@@ -1,19 +1,19 @@
+# mythbuster_streamlit.py
+
 import os
 import json
 import requests
 import logging
 from pathlib import Path
 from dotenv import load_dotenv
-from typing_extensions import List, TypedDict
-
-import gradio as gr
+import streamlit as st
 
 from langchain_core.documents import Document
-from langchain_core.tools import tool
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 from langchain_community.tools import DuckDuckGoSearchResults
+from duckduckgo_search.exceptions import DuckDuckGoSearchException
 
 # ---------------- ENV & LOGGING ----------------
 
@@ -22,14 +22,7 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 HF_API_TOKEN = os.getenv("HF_API_TOKEN")
 os.environ["USER_AGENT"] = "my-custom-agent"
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
-    handlers=[
-        logging.FileHandler("assistant.log"),
-        logging.StreamHandler()
-    ]
-)
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # ---------------- EMBEDDINGS & VECTOR STORE ----------------
@@ -51,14 +44,13 @@ else:
 
 splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200, add_start_index=True)
 
-
-# ---------------- GROQ LLM ----------------
+# ---------------- FUNCTION DEFINITIONS ----------------
 
 def query_groq_llm(prompt: str) -> str:
     system_prompt = (
         "You are MythBuster AI. A user will state a myth or claim. "
         "Your task is to analyze the claim using the provided context or search result. "
-        "Decide if the claim is BUSTED, PLAUSIBLE, or CONFIRMED. Justify your verdict briefly and factually.Provide Source if possible "
+        "Decide if the claim is BUSTED, PLAUSIBLE, or CONFIRMED. Justify your verdict briefly and factually."
     )
 
     url = "https://api.groq.com/openai/v1/chat/completions"
@@ -103,50 +95,25 @@ def generate_funny_image_prompt(myth: str) -> str:
     response.raise_for_status()
     return response.json()["choices"][0]["message"]["content"].strip()
 
-# ------------Hugging face model for image generation -------
+
 def generate_image_from_prompt(prompt: str, api_token: str, output_path="funny_output.jpg") -> str:
     url = "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev"
     headers = {"Authorization": f"Bearer {api_token}"}
     payload = {"inputs": prompt}
-
     response = requests.post(url, headers=headers, json=payload)
     response.raise_for_status()
-
-    # Save image
     with open(output_path, "wb") as f:
         f.write(response.content)
-
     return output_path
 
-# ---------------- DUCKDUCKGO TOOL ----------------
 
-@tool
-def search_tool(query: str) -> str:
-    """Search the web using DuckDuckGo."""
-    search = DuckDuckGoSearchResults()
-    return search.run(query)
-
-# ---------------- UTILS ----------------
-
-def is_vague(text: str) -> bool:
-    if not text.strip():
-        return True
-    vague_phrases = [
-        "i don't know", "not sure", "cannot answer", "no context", "not enough info",
-        "uncertain", "please provide", "you haven't", "unknown", "not found"
-    ]
-    return any(phrase in text.lower() for phrase in vague_phrases)
-
-def is_realtime_query(text: str) -> bool:
-    keywords = ["current", "today", "latest", "now", "who is", "trending", "new", "recent"]
-    return any(k in text.lower() for k in keywords)
-
-# ---------------- FALLBACK WEB SEARCH ----------------
-
-def use_tool_only(claim: str) -> str:
+def use_tool_only(claim: str) -> tuple[str, str]:
     logger.info(f"Real-time myth query detected: '{claim}'")
-    result = search_tool.invoke({"query": claim})
-    
+    try:
+        result = DuckDuckGoSearchResults().run(claim)
+    except DuckDuckGoSearchException as e:
+        return "DuckDuckGo search failed or timed out.", "web"
+
     prompt = f"""
 Claim: "{claim}"
 
@@ -155,10 +122,7 @@ Evidence from the Web:
 
 Determine if the claim is BUSTED, PLAUSIBLE, or CONFIRMED. Explain briefly.
 """
-
     response = query_groq_llm(prompt)
-
-    # Store result in memory
     new_doc = Document(page_content=result)
     chunks = splitter.split_documents([new_doc])
     existing = vector_store.similarity_search(result, k=5)
@@ -168,16 +132,10 @@ Determine if the claim is BUSTED, PLAUSIBLE, or CONFIRMED. Explain briefly.
         logger.info("Adding new content to vector store.")
         vector_store.add_documents(chunks)
         vector_store.save_local(vector_store_path)
-    else:
-        logger.info("Content already exists. Skipping add.")
-        return f"🧠 [Memory Verdict]\n\n{response} "
-
-    return f"🌐 [Web Verdict]\n\n{response}"
+    return response, "web"
 
 
-# ---------------- ASK FUNCTION ----------------
-
-def ask(claim: str) -> str:
+def ask(claim: str) -> tuple[str, str]:
     logger.info(f"New Claim: {claim}")
     retrieved_docs = vector_store.similarity_search_with_score(claim, k=5)
     threshold = 0.5
@@ -197,77 +155,44 @@ Context from known sources:
 Determine if the claim is BUSTED, PLAUSIBLE, or CONFIRMED. Explain briefly.
 """
     response = query_groq_llm(prompt)
+    return response, "memory"
 
-    if not is_vague(response):
-        logger.info("Myth verdict given from memory.")
-        return f"🧠 [Memory Verdict]\n\n{response}"
+# ---------------- STREAMLIT UI ----------------
 
-    logger.info("Memory response vague. Falling back to web.")
-    return use_tool_only(claim)
+st.set_page_config(page_title="MythBuster AI", layout="centered")
+st.title("🕵️ MythBuster AI")
+st.markdown("Ask me about any myth, rumor, or belief. I’ll classify it as **BUSTED**, **PLAUSIBLE**, or **CONFIRMED**.")
 
+st.markdown("### 💡 Choose an example or enter your own claim")
 
-# ---------------- GRADIO UI ----------------
+example_claims = [
+    "",
+    "Drinking cold water causes a sore throat",
+    "Humans only use 10% of their brain",
+    "Goldfish have a 3-second memory",
+    "You can see the Great Wall of China from space",
+    "Eating carrots improves your eyesight",
+    "Vaccines cause autism",
+    "Bats are blind",
+    "Lightning never strikes the same place twice",
+    "Cracking your knuckles causes arthritis"
+]
 
-with gr.Blocks(title="MythBuster AI") as iface:
-    gr.Markdown("""
-    # 🕵️ MythBuster AI  
-    **Ask me about any myth, rumor, or common belief — I'll investigate it and give you a verdict!**  
-    <br>
-    💡 I classify myths as:
-    - ✅ **CONFIRMED**
-    - ❓ **PLAUSIBLE**
-    - ❌ **BUSTED**
-    """)
-    gr.Markdown("## 🧠 Myth Verdicts")
+selected_example = st.selectbox("Examples", example_claims, index=0)
+custom_input = st.text_input("✍️ Or type your own:", placeholder="e.g., 'Goldfish have a 3-second memory'")
+generate_image = st.checkbox("🎨 Generate Funny Image", value=True)
 
-    with gr.Row():
-        chatbot = gr.Chatbot(label="🧠 Myth Verdicts", height=400, type="messages")
-        # logbox = gr.Textbox(label="📜 Logs", lines=12, interactive=False)
-        funny_output = gr.Image(label="😂 Funny Image")
+# Determine which input to use
+final_claim = custom_input.strip() if custom_input.strip() else selected_example.strip()
 
-    with gr.Row():
-        msg = gr.Textbox(
-            label="Enter a myth or claim",
-            placeholder="e.g., 'Drinking cold water causes a sore throat'",
-            show_label=False
-        )
-        submit_btn = gr.Button("🚀 Bust This Myth")
+if st.button("🚀 Bust This Myth") and final_claim:
+    with st.spinner("Analyzing myth..."):
+        verdict, source = ask(final_claim)
+        label = "🧠 Memory Verdict" if source == "memory" else "🌐 Web Verdict"
+        st.markdown(f"### {label}\n{verdict}")
 
-
-        def user_message_handler(message, history, generate_img):
-            logger.info(f"User claim: {message}")
-            response = ask(message)
-            history.append({"role": "user", "content": message})
-            history.append({"role": "assistant", "content": response})
-
-            image_path = None
-            if generate_img:
-                funny_prompt = generate_funny_image_prompt(message)
-                image_path = generate_image_from_prompt(funny_prompt, HF_API_TOKEN) 
-
-            return "", history, image_path
-
-    gen_image = gr.Checkbox(label="🎨 Generate Funny Image", value=True)
-    submit_btn.click(user_message_handler, [msg, chatbot, gen_image], [msg, chatbot, funny_output])
-    msg.submit(user_message_handler, [msg, chatbot, gen_image], [msg, chatbot, funny_output])
-
-    gr.Examples(
-        examples=[
-            ["Drinking cold water causes a sore throat"],
-            ["Humans only use 10% of their brain"],
-            ["Goldfish have a 3-second memory"],
-            ["You can see the Great Wall of China from space"],
-            ["Eating carrots improves your eyesight"],
-            ["Vaccines cause autism"],
-            ["Bats are blind"],
-            ["Lightning never strikes the same place twice"],
-            ["Cracking your knuckles causes arthritis"],
-            ["The Great Wall of China is visible from space"]
-        ],
-        inputs=msg,
-        outputs=[msg, chatbot],
-        label="Examples",
-        fn=user_message_handler
-    )
-if __name__ == "__main__":
-    iface.launch(share=True)
+        if generate_image:
+            with st.spinner("Generating image..."):
+                prompt = generate_funny_image_prompt(final_claim)
+                image_path = generate_image_from_prompt(prompt, HF_API_TOKEN)
+                st.image(image_path, caption="Humorous Illustration")

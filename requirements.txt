@@ -5,6 +5,6 @@ langchain-huggingface
 faiss-cpu
 langchain-text-splitters
 duckduckgo-search
-gradio
+streamlit
 requests
 transformers
