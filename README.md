@@ -22,7 +22,7 @@ MythBuster AI is an intelligent assistant that investigates myths, rumors, and c
 - **HuggingFace Embeddings**
 - **Groq API** (LLaMA 3 model)
 - **Hugging Face Inference API** (optional funny image generation)
-- **Dotenv** (for secure API key management)
+- **Dotenv**(for secure API key management)
 
 ## 📦 Setup Instructions
 
