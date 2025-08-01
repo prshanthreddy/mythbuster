@@ -8,3 +8,4 @@ duckduckgo-search
 gradio
 requests
 transformers
+sentence-transformers

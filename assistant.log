@@ -766,3 +766,13 @@ The memories fade away quickly, with only a faint outline remaining. The goldfis
 2025-05-07 10:47:27,511 [INFO] User claim: Humans only use 10% of their brain
 2025-05-07 10:47:27,514 [INFO] New Claim: Humans only use 10% of their brain
 2025-05-07 10:47:29,137 [INFO] Myth verdict given from memory.
+2025-08-01 22:15:09,701 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: cpu
+2025-08-01 22:15:09,702 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 22:15:09,709 [WARNING] sentence_transformers.SentenceTransformer: No sentence-transformers model found with name sentence-transformers/all-MiniLM-L6-v2. Creating a new one with mean pooling.
+2025-08-01 22:16:58,977 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: cpu
+2025-08-01 22:16:58,977 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-01 22:16:58,983 [WARNING] sentence_transformers.SentenceTransformer: No sentence-transformers model found with name sentence-transformers/all-MiniLM-L6-v2. Creating a new one with mean pooling.
+2025-08-01 22:16:58,991 [WARNING] mythbuster: ⚠️  Warning: Could not load embedding model: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+Check your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+2025-08-01 22:16:58,991 [WARNING] mythbuster: Vector search functionality will be limited
+2025-08-01 22:16:58,991 [WARNING] mythbuster: ⚠️  Vector store disabled (no embeddings available)
