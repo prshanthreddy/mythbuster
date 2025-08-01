@@ -1,16 +1,27 @@
-# 🕵️ MythBuster AI
+# 🕵️ MythBuster AI - Enhanced
 
 MythBuster AI is an intelligent assistant that investigates myths, rumors, and common beliefs to determine whether they are **BUSTED**, **PLAUSIBLE**, or **CONFIRMED** using vector memory and real-time web search.
 
-## 🚀 Features
+## ✨ What's New in v2.0
+
+### 🚀 Enhanced Features
+- **🛡️ Robust Error Handling**: Graceful fallbacks when APIs are unavailable
+- **🎨 Improved UI**: Better styling, loading indicators, and user feedback  
+- **🔒 Input Validation**: Sanitization and validation to prevent issues
+- **📱 Offline Resilience**: Works even without internet for model downloads
+- **⚡ Performance**: Caching for repeated queries and optimized operations
+- **🏗️ Modular Architecture**: Choose between single-file or modular structure
+- **📝 Better Documentation**: Comprehensive setup guides and help
+
+### 🎯 Core Features
 
 - 🔍 **Semantic Search** using FAISS and HuggingFace embeddings (`all-MiniLM-L6-v2`)
 - 🌐 **Real-time Web Search** with DuckDuckGo for recent or unknown claims
 - 🧠 **Vector Store Memory** to retain and reuse learned evidence
-- 🤖 **LLM Verdict Generation** via Groq API using LLaMA 3
+- 🤖 **LLM Verdict Generation** via Groq API using LLaMA 3.1
 - 🎨 **Optional Funny Image Generation** using Hugging Face Inference API (black-forest-labs/FLUX.1-dev)
-- 🧰 **Gradio Interface** for an interactive, user-friendly chatbot
-- 📜 **Logging** of claims, verdicts, and behavior for transparency
+- 🧰 **Enhanced Gradio Interface** for an interactive, user-friendly experience
+- 📜 **Comprehensive Logging** for transparency and debugging
 
 ## 🛠️ Tech Stack
 
@@ -24,46 +35,32 @@ MythBuster AI is an intelligent assistant that investigates myths, rumors, and c
 - **Hugging Face Inference API** (optional funny image generation)
 - **Dotenv**(for secure API key management)
 
-## 📦 Setup Instructions
+## 📦 Quick Setup
 
-1. **Clone the Repository**
-
+1. **Clone and Install**
    ```bash
    git clone https://github.com/prshanthreddy/mythbuster.git
    cd mythbuster
-   ```
-
-2. **Create and Activate a Virtual Environment**
-
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # or `venv\Scripts\activate` on Windows
-   ```
-
-3. **Install Dependencies**
-
-   ```bash
    pip install -r requirements.txt
    ```
 
-4. **Set Environment Variables**
-
-   Create a `.env` file in the root directory with the following content:
-
-   ```env
-   GROQ_API_KEY=your_groq_api_key_here
-   HF_API_TOKEN=your_huggingface_api_token_here
-   ```
-
-5. **Run the App**
-
+2. **Configure API Keys**
    ```bash
-   python app.py
+   cp .env.template .env
+   # Edit .env with your API keys:
+   # GROQ_API_KEY=your_groq_api_key_here
+   # HF_API_TOKEN=your_huggingface_api_token_here  # Optional for images
    ```
 
-6. **Access the Interface**
+3. **Run the Application**
+   ```bash
+   python app.py                # Enhanced single-file version
+   # OR
+   python app_enhanced.py       # Modular architecture version
+   ```
 
-   Once launched, the app will open in your default browser or provide a public link if `share=True`.
+4. **Access the Interface**
+   Open your browser to the provided URL (usually http://localhost:7860)
 
 ## ✨ Example Myths to Try
 
@@ -74,26 +71,69 @@ MythBuster AI is an intelligent assistant that investigates myths, rumors, and c
 
 ## 📁 Project Structure
 
+### Single-File Version
 ```
 .
-├── assistant.log          # Logging output
-├── app.py                 # Main application code
-├── faiss_index/           # Stored vector memory
-├── .env                   # Environment variable file (not committed)
-├── README.md              # This file
-└── requirements.txt       # Python dependencies
+├── app.py                   # Enhanced single-file application
+├── app_original.py          # Original backup
+├── requirements.txt         # Dependencies
+├── .env.template           # Environment template
+├── SETUP.md                # Detailed setup guide
+└── README.md               # This file
+```
+
+### Modular Version  
+```
+.
+├── app_enhanced.py         # Modular entry point
+├── config.py               # Configuration management
+├── models.py               # Data models and types
+├── services.py             # Core business logic
+├── ui.py                   # Enhanced Gradio interface
+├── utils.py                # Utility functions
+├── logger.py               # Logging configuration
+└── [common files as above]
 ```
 
 ## 🧠 How It Works
 
-1. **Input Claim** → via Gradio chatbot
-2. **Search Vector Store** → looks for semantically similar prior evidence
-3. **If Memory Vague or Missing** → uses DuckDuckGo tool to fetch relevant web results
-4. **Prompt LLM** → send claim + context to Groq LLaMA 3 API
-5. **Verdict Returned** → BUSTED / PLAUSIBLE / CONFIRMED with reasoning
+1. **Input Processing** → Sanitize and validate user claims
+2. **Memory Search** → Check vector store for similar prior evidence  
+3. **Web Research** → If needed, search DuckDuckGo for current information
+4. **AI Analysis** → Send context to Groq LLaMA 3.1 for analysis
+5. **Verdict Generation** → Return BUSTED ❌ / PLAUSIBLE ❓ / CONFIRMED ✅
+6. **Knowledge Storage** → Save new evidence in vector database
 6. **Optional Funny Image Generation** → if enabled via checkbox, uses Groq to generate a humorous image prompt, then calls Hugging Face’s `black-forest-labs/FLUX.1-dev` model to generate a matching image
 7. **Log + Store Evidence** → saves new info into FAISS vector DB
 
 ## 🔐 Security
 
 Make sure not to share your `.env` file or any API keys. Keep your `GROQ_API_KEY` and `HF_API_TOKEN` secure and never commit them to version control.
+
+## 🚀 Deployment Options
+
+### Development
+```bash
+python app.py              # Quick start with enhanced features
+```
+
+### Production  
+```bash
+python app_enhanced.py     # Modular architecture for production
+```
+
+## 🛠️ Troubleshooting
+
+- **"Could not load embedding model"**: Internet required for first run, then cached locally
+- **"GROQ_API_KEY not found"**: Copy `.env.template` to `.env` and add your API key  
+- **"Image generation disabled"**: Add `HF_API_TOKEN` to `.env` (optional feature)
+- **Web search errors**: Rate limiting is normal, responses are cached
+
+## 🤝 Contributing
+
+1. Use the modular structure (`app_enhanced.py`) for new features
+2. Follow existing code style and type hints
+3. Add tests for new functionality
+4. Update documentation
+
+For detailed setup instructions, see [SETUP.md](SETUP.md).
